@@ -1,2 +1,2 @@
 # CMV-publico
-portafolio curso
+Ejercicios del curso
