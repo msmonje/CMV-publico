@@ -1,0 +1,92 @@
+/*
+CSS 
+web o pagina:
+autor:
+fecha:
+RECORDAR:
+en caso de conflictos se aplica el estilo que se define Ãºltimo,
+o sea al final de este archivo o en la misma pagina html
+
+Se incluyen los principales SELECTORES SIMPLES; hay mÃ¡s combinaciones...
+
+*/
+
+* {
+  /* estilos por defecto para TODOS los elementos de la pÃ¡gina; */
+  /* estilo:valor; */
+  box-sizing:border-box;
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  
+}
+
+figure{
+height:400px;
+width:400px;
+}
+
+img {
+	width:300px;
+	height :200px;
+}
+
+.claseUno {
+  /* estilos para todos los elementos que son de la clase .claseUno; */
+  /* estilo:valor; */
+}
+
+.claseUno.claseDos {
+  /* estilos para todos los elementos que son de la clase .claseUno y .claseDos;
+     NO hay espacio entre ambos selectores  */
+  /* estilo:valor; */
+}
+
+.claseUno .claseDos {
+  /* estilos para todos los elementos de .claseDos que descienden de uno de .claseUno;
+     HAY UN espacio entre ambos selectores  */
+  /* estilo:valor; */
+}
+
+#esteElemento {
+  /* estilos para el Ãºnico elemento identificado con este #esteElemento; */
+  /* estilo:valor; */
+}
+
+p.claseUno {
+  /* estilos para todos los elementos <p> que son de la clase .claseUno; */
+  /* estilo:valor; */
+}
+
+p,div {
+  /* estilos para todos los elementos que sean <p> o <div>; */
+  /* estilo:valor; */
+}
+
+div > p {
+  /* estilos para todos los elementos que sean <p> que estÃ©n dentro (sean hijos de) un <div>; */
+  /* estilo:valor; */
+}
+
+h1 + p {
+  /* estilos para todos los elementos que sean <p> que sean hermanos y estÃ©n inmediantamente despuÃ©s de <h1>; */
+  /* estilo:valor; */
+}
+
+/*
+
+pseudoclases, asignarles estilos en este orden llamado LVHA:
+   :link â€” :visited â€” :hover â€” :active.
+   
+MÃ¡s selectores y documentaciÃ³n:
+pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
+pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
+pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
+formularios: https://www.w3schools.com/css/css_form.asp
+posicionamiento: https://www.w3schools.com/css/css_positioning.asp
+selectores: https://www.w3schools.com/cssref/css_selectors.asp
+*/
+
+
+
+
