@@ -20,7 +20,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 	/* estilo:valor; */
 	font-family: 'Nunito', sans-serif;
 	color: #17191c;
-	text-transform:none;
+	
 	box-sizing:border-box;
 	 margin-left:10px;
 	padding:0px;
@@ -58,12 +58,9 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
   background-color:#c5cc9f;
   color:#fffff;
   font-size:20px;
+  font-weight:bold;
 }
-#menu a:active{
-  background-color:#ff0000;
-  color:#ffff00;
-}
-Ape
+
 
 
 
