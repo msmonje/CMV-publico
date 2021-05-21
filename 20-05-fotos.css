@@ -54,7 +54,14 @@ footer{
     left:0px;
    top: -30px;
    
- 
+  }
+  figcaption{
+    position:relative;
+    top:-18.4px;
+    background-color: rgba(124, 151, 191, 0.3);
+    color:azure;
+   
+  }
 .claseUno {
   /* estilos para todos los elementos que son de la clase .claseUno; */
   /* estilo:valor; */

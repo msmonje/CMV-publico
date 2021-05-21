@@ -1,60 +1,33 @@
 /*
 CSS 
 web o pagina:
-autor:
-fecha:
+entorno: Curso CMV-Accenture
+autor: Carlos Boni
+fecha: Mayo 2021
 RECORDAR:
-en caso de conflictos se aplica el estilo que se define Ãºltimo,
+en caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
-Se incluyen los principales SELECTORES SIMPLES; hay mÃ¡s combinaciones...
+Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 
 */
 
 * {
-  /* estilos por defecto para TODOS los elementos de la pÃ¡gina; */
+  /* estilos por defecto para TODOS los elementos de la página; */
   /* estilo:valor; */
-  font-family: 'Arial', sans-serif;
   box-sizing:border-box;
   margin:0px;
   padding:0px;
+}
+
+div {
+  /* estilos para todos los elementos <div>; */
+  /* estilo:valor; */
   
-}
-head {
-	display:none;
-}
-body{
-	background: rgba(128, 120, 120, 0.2);
-}
-figure{
-    width: 33%;
-    height: 400px;
-    display: inline-block;
+  /* box-sizing:border-box  incluye en las dimensiones de un elemento el espacio del padding y del border. */
+  /* display:flex   da la misma altura a todos los elementos que están en el mismo DIV */
 }
 
-img {
-	      height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-div{
-text-align:center;
-margin:0px;
-padding: 0px;
-}
-
-}
-footer{
-	display:block;
-	}
-  #foto1{
-    height:30px;
-    background-color: rgba(124, 151, 191, 0.3);
-    position:relative;
-    left:0px;
-   top: -30px;
-   
- 
 .claseUno {
   /* estilos para todos los elementos que son de la clase .claseUno; */
   /* estilo:valor; */
@@ -73,7 +46,7 @@ footer{
 }
 
 #esteElemento {
-  /* estilos para el Ãºnico elemento identificado con este #esteElemento; */
+  /* estilos para el único elemento identificado con este #esteElemento; */
   /* estilo:valor; */
 }
 
@@ -88,21 +61,21 @@ p,div {
 }
 
 div > p {
-  /* estilos para todos los elementos que sean <p> que estÃ©n dentro (sean hijos de) un <div>; */
+  /* estilos para todos los elementos que sean <p> que estén dentro (sean hijos de) un <div>; */
   /* estilo:valor; */
 }
 
 h1 + p {
-  /* estilos para todos los elementos que sean <p> que sean hermanos y estÃ©n inmediantamente despuÃ©s de <h1>; */
+  /* estilos para todos los elementos que sean <p> que sean hermanos y estén inmediantamente después de <h1>; */
   /* estilo:valor; */
 }
 
 /*
 
 pseudoclases, asignarles estilos en este orden llamado LVHA:
-   :link â€” :visited â€” :hover â€” :active.
+   :link — :visited — :hover — :active.
    
-MÃ¡s selectores y documentaciÃ³n:
+Más selectores y documentación:
 pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
 pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
 pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
@@ -110,6 +83,7 @@ formularios: https://www.w3schools.com/css/css_form.asp
 posicionamiento: https://www.w3schools.com/css/css_positioning.asp
 selectores: https://www.w3schools.com/cssref/css_selectors.asp
 */
+
 
 
 
