@@ -10,9 +10,9 @@ h1{font-size:60px;
 	  display: flex;
 align-items: center;}
 .piefoto{
-	height:30%;
+	height:30vh;
 	position: relative;
-    top:-30%;
+    top:-30vh;
     background-color: rgba(124, 151, 191, 0.5);
     color: rgba(236, 242, 51);
 	font-size:3vw;
@@ -40,8 +40,9 @@ img{
 }
 @media only screen and (max-width: 600px) {
 .piefoto {
-	height:15%;
-    font-size: 1vw;
+	height:10%;
+	 top:-10%;
+    font-size: 2.5vw;
   }
 }
 
