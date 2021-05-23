@@ -40,6 +40,7 @@ img{
 }
 @media only screen and (max-width: 600px) {
 .piefoto {
+	height:15%;
     font-size: 1vw;
   }
 }
