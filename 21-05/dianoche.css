@@ -1,0 +1,137 @@
+:root {
+  --fuenteDia : #252222;
+  --fuenteNoche: #f3f3fa;
+  --fondoDia: rgba(245, 245, 248, 0.2);
+  --fondoNoche: black;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+
+.dia {
+  color: var(--fuenteDia);
+  background-color: var(--fondoDia);
+}
+
+.noche {
+  color: var(--fuenteNoche);
+  background-color: var(--fondoNoche);
+}
+
+.marco {
+  display: grid;
+  border-style: solid;
+  grid-template-columns: 250px repeat(1,1fr);
+  grid-template-rows: 150px 40px auto 40px;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado {
+  text-align: center;
+  background-color:rgba(106, 106, 124, 0.2);
+
+ 
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+}
+
+.migas {
+ 
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+}
+
+/*.lado {
+  border-style: solid;
+  border-color: violet;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}*/
+
+.contenido {
+ 
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.pie {
+ 
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+}
+
+#menuhorizontal {
+  margin-left:100px;
+  padding:0;
+  list-style-type:none;
+}
+#menuhorizontal a {
+  
+ text-decoration: none;
+  text-align:center;
+  color: #564d79ba;
+  background-color:rgba(128, 120, 120, 0);
+  padding:3px 5px;
+  border-right:1px solid blue;
+  display:block;
+  font-size: 5 px;
+}
+
+#menuhorizontal li {
+  float:left;
+}
+
+#menuhorizontal a:hover {
+	color:  ;
+	font-weight: bold; 
+  background-color:#b3b3cc;
+}
+* {
+  /* estilos por defecto para TODOS los elementos de la pÃ¡gina; */
+  /* estilo:valor; */
+  font-family: 'Arial', sans-serif;
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+  
+}
+head {
+	display:none;
+}
+body{
+	background: rgba(128, 120, 120, 0.2);
+}
+figure{
+    width: 33%;
+    height: 400px;
+    display: inline-block;
+}
+
+img {
+	      height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+div{
+text-align:center;
+margin:0px;
+padding: 0px;
+}
+
+}
+footer{
+	display:block;
+	}
+  #foto1{
+    height:30px;
+    background-color: rgba(124, 151, 191, 0.3);
+    position:relative;
+    left:0px;
+   top: -30px;
+   

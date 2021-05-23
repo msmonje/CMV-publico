@@ -4,47 +4,45 @@
 <!--
 HTML
 web o pagina:
-entorno: curso Accenture-CMV
-autor: Mariana
-fecha: Mayo 2021
+autor: Carlos Boni
+fecha: Marzo 2021
 -->
 
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	
+
 	<!-- importante SEO para la etiqueta del navegador -->
 	<title>Titulo en Etiqueta del Navegador</title>
-	
+
 	<!-- una fuente de Google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
-	
+
 	<!-- una hoja de estilos externa-->
-	
+
 	<!-- una hoja de estilos personalizada-->
-	<link href="index.css" rel="stylesheet"/>
-	
+	<link href="dianoche.css" rel="stylesheet"/>
+
 	<!-- iconos u otros elementos externos -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-	
+
 	<!-- solo aquellos estilos que solo aplican a esta pagina -->
     <style>
-		* {
-			font-family: 'Nunito', sans-serif;
-		}
-		
-		body {
-			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
-		}
-	</style>
+   /* :root{
+      --rojo: #ff0000;
+      font-size:16px;
+    }*/
 	
+
+	</style>
+
 	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
+
 	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
 	<script src="00-modelo.js"></script>
-	
+
 	<!-- scripts personalizados Javascript o JQuery -->
 	<script>
 		// aqui el codigo ...
@@ -54,59 +52,64 @@ fecha: Mayo 2021
 
 <body>
 
-	<!-- cabecera de pagina -->
-	<header>
-		<h1></h1>
-		<h2></h2>
-		<br/>
-	</header>
+	<div class="marco">
+		<div class="encabezado">logo</div>
+		<div class="encabezado">
+			<ul id="menuhorizontal">
+			<li><a href="../index.html">Ejercicios</a></li>
+			<li><a href="*">Enlace2</a></li>
+			<li><a href="*">Enlace3</a></li>
+			<li><a href="*">Enlace4</a></li>
+		</ul>
+		</div>
 	
-	<!-- bloque de contenido de la pagina -->
-	<main>
+		
+		<div class="contenido">
 	
-		<details>
-			<summary>Menú ejercicios</summary>
-				<ul id="menu">
-					<li>
-						<a href="14-05-fotos.html">Tres imágenes</a>
-					</li>
-					<li>
-						<a href="17-05-menu.html"> Menú </a>
-					</li>
-					<li>
-						<a href="ejercicios/20-05-pos06.html"> Sticky </a>
-					</li>
-					<li>
-						<a href="ejercicios\piefoto.html">Pie de foto</a>
-						
-					</li>
-					<li>
-						<a href="*">Ejercicio 5</a>
-					</li>
-					<li>
-						<a href="*">Ejercicio 6</a>
-					</li>
-					<li>
-						<a href="*">Ejercicio 7</a>
-					</li>
-					<li>
-						<a href="*">Ejercicio 8</a>
-					</li>
-				</ul>
-		</details>
+			<figure>
+			<h3> Paisaje de marte</h3>
+			<img src="..\mmedia\landscape.jpg">
+			
+			<div id="foto1">
+				<figcaption > Marte es un buen lugar
+	
+			</div>
+			
+			</figure>
+		
+	
+		
+			<figure>
+			<h3> Paisaje de saturno</h3>
+			<img src="..\mmedia\fantasy.jpg">
+			
+			<figcaption> Otro paisaje
+			</figure>
+		
+		
+		
+			<figure>
+			<h3> Paisaje de plutón</h3>
+			<img src="..\mmedia\mountains.jpg">
+			
+			<figcaption> Tercer paisaje
+			</figure>
+		
+		<div class="pie"><p id="texto" >Pinche en el siguiente botón para cambiar de color</p>
+			
+			<button>Alternar colores</button></div>
+	</div>
+</div>
 
-	</main>
-
-
-	<!-- pie de pagina -->
-	<footer>
-		<br/><br/><br/>
-		<div></div>
-	</footer>
-
+		
 	<script>
 		// seccion de codigo javascript 
+		
+			$("button").click(function(){
+				$("h1, h2, p, div").toggleClass("noche");
+			  });
+	
+		</script>
 
-	</script>
 </body>
-</html>
+</html> 

@@ -1,0 +1,43 @@
+* {
+    /* estilo por defecto para todos los elementos de la pagina*/
+    box-sizing: border-box;
+    font-family: Candara;
+	color:rgba(107, 104, 104);
+}
+h1{font-size:60px;
+}
+.contenedor{
+	  display: flex;
+align-items: center;}
+.piefoto{
+	height:200px;
+	    position: relative;
+    top: -200px;
+    background-color: rgba(124, 151, 191, 0.5);
+    color: rgba(236, 242, 51);
+	font-size:50px;
+	font-weight:bold;
+	text-align:center;
+}
+figure{
+	 padding: 5px;
+    margin: 5px;
+	
+       width: 33%;
+    height: 600px;
+    display: inline-block;
+	
+}
+
+img{   
+
+    width: 100%;
+   
+    padding-top: 5%;
+    object-fit: contain;
+	display:inline-block
+   
+}
+
+
+
