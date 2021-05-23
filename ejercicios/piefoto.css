@@ -10,12 +10,12 @@ h1{font-size:60px;
 	  display: flex;
 align-items: center;}
 .piefoto{
-	height:200px;
-	    position: relative;
-    top: -200px;
+	height:30%;
+	position: relative;
+    top:-30%;
     background-color: rgba(124, 151, 191, 0.5);
     color: rgba(236, 242, 51);
-	font-size:50px;
+	font-size:3vw;
 	font-weight:bold;
 	text-align:center;
 }
