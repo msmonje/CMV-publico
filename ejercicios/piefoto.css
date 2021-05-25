@@ -6,9 +6,12 @@
 }
 h1{font-size:60px;
 }
+h3{
+    margin-left: 10%;
+}
 .contenedor{
 	  display: flex;
-align-items: center;}
+justify-content: center;}
 .piefoto{
 	height:30%;
 	position: relative;
@@ -23,9 +26,10 @@ figure{
 	 padding: 5px;
     margin: 5px;
 	
-       width: 33%;
-    height: 600px;
+       width: 20%;
+    height:50%;
     display: inline-block;
+    
 	
 }
 
@@ -38,13 +42,15 @@ img{
 	display:inline-block
    
 }
-@media only screen and (max-width: 600px) {
 .piefoto {
-	height:10vh;
-	 top:-10vh;
-    font-size: 2.5vw;
+	height:12vh;
+	 top:-12vh;
+    font-size: 1.5vw;
   }
+
+@media only screen and (max-width: 600px) {
+
+
+
+
 }
-
-
-

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+body {
+      background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+  }
+
+  .marco {
+    display: grid;
+    border-style: solid;
+    border-color: red;
+    grid-template-columns: 250px repeat(3,1fr);
+    grid-template-rows: 150px 40px auto 40px;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .encabezado {
+    border-style: solid;
+    border-color: blue;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+  }
+
+  .migas {
+    border-style: solid;
+    border-color: yellow;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+  }
+
+  .lado {
+    border-style: solid;
+    border-color: violet;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .contenido {
+    border-style: solid;
+    border-color: violet;
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 1;
+overflow: scroll;/*solamente desplazo el contenido de esta grilla*/
+overflow-x: hidden;
+  }
+
+  .pie {
+    border-style: solid;
+    border-color: aqua;
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+
+
+ 
+
+
+
+  
+@media screen and(max-width:600px) {
+    p{ 
+        font-size:22px
+    } /*solo aplica a pantallas menores de 600*/
+}
+    
+* {
+  /* estilo por defecto para todos los elementos de la pagina*/
+  box-sizing: border-box;
+  font-family: Candara;
+color:rgba(107, 104, 104);
+}
+h1{font-size:60px;
+}
+h3{
+  margin-left: 10%;
+}
+.contenedor{
+  display: flex;
+justify-content: center;}
+.piefoto{
+
+position: relative;
+ 
+  background-color: rgba(124, 151, 191, 0.5);
+  color: rgba(236, 242, 51);
+font-size:1.2vw;
+font-weight:bold;
+text-align:center;
+height:12vh;
+ top:-12vh;
+  
+}
+figure{
+ padding: 5px;
+  margin: 5px;
+
+     width: 20%;
+  height:41vh;
+  display: inline-block;
+}
+
+img{   
+
+  width: 100%;
+ 
+  padding-top: 5%;
+  object-fit: contain;
+display:inline-block
+ 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+
+}
