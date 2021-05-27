@@ -22,7 +22,7 @@ fecha: Marzo 2021
 	<!-- una hoja de estilos externa-->
 
 	<!-- una hoja de estilos personalizada-->
-	<link href="21-05-grillas.css" rel="stylesheet"/>
+	<link href="modonoche.css" rel="stylesheet"/>
 
 	<!-- iconos u otros elementos externos -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -50,11 +50,16 @@ fecha: Marzo 2021
 </head>
 
 
-<body>
+<body >
 
 	<div class="marco">
 		<div class="encabezado"><h1>Historias de papel</h1></div>
-		<div class="migas"><h3>Los mejores comics del universo</h3></div>
+		<div class="migas"><h3>Los mejores comics del universo</h3>
+          
+			
+            
+        </div>
+       
 		<div class="lado">
 			
 			<nav>
@@ -68,7 +73,9 @@ fecha: Marzo 2021
 					</ul></li>
 					<li><a href="#">Contacto</a></li>
 				</ul>
+                <div><button>Alternar colores</button></div>
 		</nav>
+       
 		</div>
 		<div class="contenido">
 			<div class="contenedor">
@@ -91,6 +98,15 @@ fecha: Marzo 2021
 		</div>
     <div class="pie">Mariana Sueiro</div>
 	</div>
+
+    <script>
+		// seccion de codigo javascript 
+		
+			$("button").click(function(){
+				$("marco").toggleClass("noche");
+			  });
+	
+		</script>
 
 
 </body>

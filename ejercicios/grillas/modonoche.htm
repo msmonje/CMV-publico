@@ -50,11 +50,16 @@ fecha: Marzo 2021
 </head>
 
 
-<body>
+<body >
 
 	<div class="marco">
 		<div class="encabezado"><h1>Historias de papel</h1></div>
-		<div class="migas"><h3>Los mejores comics del universo</h3></div>
+		<div class="migas"><h3>Los mejores comics del universo</h3>
+          
+			
+            
+        </div>
+       
 		<div class="lado">
 			
 			<nav>
@@ -69,6 +74,7 @@ fecha: Marzo 2021
 					<li><a href="#">Contacto</a></li>
 				</ul>
 		</nav>
+        <button>Alternar colores</button>
 		</div>
 		<div class="contenido">
 			<div class="contenedor">
@@ -91,6 +97,15 @@ fecha: Marzo 2021
 		</div>
     <div class="pie">Mariana Sueiro</div>
 	</div>
+
+    <script>
+		// seccion de codigo javascript 
+		
+			$("button").click(function(){
+				$("marco").toggleClass("noche");
+			  });
+	
+		</script>
 
 
 </body>
