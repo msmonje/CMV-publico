@@ -1,0 +1,17 @@
+/* modo dia-noche */
+@colorBgDia:pink;
+@colorBgNoche:gray;
+@colorDia:black;
+@colorNoche:white;
+
+@tamFont:48px;
+@modo:"noche";
+
+body{
+    background-color: if((@modo="noche"),@colorBgNoche,@colorBgDia);
+}
+
+h1{
+    color:if((@modo="noche"),@colorNoche,@colorDia);
+    font-size:@tamFont;
+}

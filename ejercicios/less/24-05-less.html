@@ -22,7 +22,7 @@ fecha: Marzo 2021
 	<!-- una hoja de estilos externa-->
 
 	<!-- una hoja de estilos personalizada-->
-	<link href="modonoche.css" rel="stylesheet"/>
+	<link href="dianoche.css" rel="stylesheet"/>
 
 	<!-- iconos u otros elementos externos -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -50,65 +50,66 @@ fecha: Marzo 2021
 </head>
 
 
-<body >
+<body>
 
 	<div class="marco">
-		<div class="encabezado"><h1>Historias de papel</h1></div>
-		<div class="migas"><h3>Los mejores comics del universo</h3>
-          
-			
-            
-        </div>
-       
-		<div class="lado">
-			
-			<nav>
-				<ul>
-					<li><a href="#">Enlace</a></li>
-					<li><a href="#">Enlace</a></li>
-					<li><a href="#">Enlace</a><ul>
-						<li><a href="#">Opción A</a></li>
-						<li><a href="#">Opción B</a></li>
-						<li><a href="#">Opción C</a></li>
-					</ul></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-                <div><button valor="noche">Alternar colores</button></div>
-		</nav>
-       
+		<div class="encabezado">logo</div>
+		<div class="encabezado">
+			<ul id="menuhorizontal">
+			<li><a href="../index.html">Ejercicios</a></li>
+			<li><a href="*">Enlace2</a></li>
+			<li><a href="*">Enlace3</a></li>
+			<li><a href="*">Enlace4</a></li>
+		</ul>
 		</div>
+	
+		
 		<div class="contenido">
-			<div class="contenedor">
-       
-			<figure class="gallery">
-				<img src="imagenes\watchmen.jpg" alt="">
-				<div class="piefoto"> Watchmen, por Alan Moore y Dave Gibbons</div>
-			</figure>
 	
-			<figure class="gallery"> 
-				<img src="imagenes\sandman.jpg" alt="">
-				<div class="piefoto"> Sandman, por Neil Gaiman, Sam Kieth y Mike Dringenberg </div>
-			</figure>
+			<figure>
+			<h3> Paisaje de marte</h3>
+			<img src="..\mmedia\landscape.jpg">
+			
+			<div id="foto1">
+				<figcaption > Marte es un buen lugar
 	
-			<figure class="gallery"> 
-				<img src="imagenes\maus.jpg" alt="">
-				<div class="piefoto"> Maus, por Art Spiegelman</div>
+			</div>
+			
 			</figure>
-		</div>
-		</div>
-    <div class="pie">Mariana Sueiro</div>
+		
+	
+		
+			<figure>
+			<h3> Paisaje de saturno</h3>
+			<img src="..\mmedia\fantasy.jpg">
+			
+			<figcaption> Otro paisaje
+			</figure>
+		
+		
+		
+			<figure>
+			<h3> Paisaje de plutón</h3>
+			<img src="..\mmedia\mountains.jpg">
+			
+			<figcaption> Tercer paisaje
+			</figure>
+		
+		<div class="pie"><p id="texto" >Pinche en el siguiente botón para cambiar de color</p>
+			
+			<button>Alternar colores</button></div>
 	</div>
+</div>
 
-    <script>
+		
+	<script>
 		// seccion de codigo javascript 
 		
 			$("button").click(function(){
-				$("body").toggleClass("noche");
-				$("h1").toggleClass("noche");
+				$("h1, h2, p, div").toggleClass("noche");
 			  });
 	
 		</script>
-
 
 </body>
 </html> 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+entorno: curso Accenture-CMV
+autor: Carlos Boni
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content= "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<!-- polyfill para soportar CSS3 Media Queries en MS explorer viejos -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Javascript</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+		}
+	</style>
+	
+
+	<!-- Importar JQuery-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="27-05ej1.js"></script>
+	
+	
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>Ejercicios javascript</h1>
+		<h2>1- Hola Mundo </h2>
+		<br/>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<div id="salida"></div>
+		<div id="mensajeJQ"></div>
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		{
+			var contador;
+			contador=1;
+
+			while(contador<5){
+				let dato=prompt"Introduce numero del 1 al 10","");
+				let num=parseInt(dato);
+			
+			document.write(`El numero introducido es ${num}`);
+				document.write(`El contadoro es ${contador}`);
+				contador=contador+1;
+				}
+				document.write(`<br/><h2>Fin del programa. Contador ya no es 5.</h2>`); 
+				document.write(`<br/>Ultimo numero introducido es ${num}`);
+		}
+	</script>
+</body>
+</html>

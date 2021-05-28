@@ -1,0 +1,15 @@
+Proceso sin_titulo
+	Escribir "pedimos tres numeros"
+	Para indice<-1 Hasta 3 Hacer
+		Escribir "ingrese numero"
+		Leer num
+		Si indice ==1  Entonces
+			peque <- num
+		SiNo
+			Si num < peque Entonces
+				peque <- num
+			FinSi
+		FinSi
+	FinPara
+	Escribir "El menor es", peque
+FinProceso

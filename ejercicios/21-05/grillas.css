@@ -56,10 +56,30 @@ overflow-x: hidden;
   }
 
 
- 
+  * {
+      box-sizing:border-box;
+  }
 
 
-
+  .imgD {
+      float:right;
+      margin:10px;
+      /* width:400px;
+      height:200px; */
+      width:35%;
+      height:auto;
+      object-fit:cover;
+  }
+  .imgI {
+      float:left;
+      margin:10px;
+      clear:right;
+      /* width:400px;
+      height:200px; */
+      width:35%;
+      height:auto;
+      object-fit:cover;
+  }
   
 @media screen and(max-width:600px) {
     p{ 
@@ -67,56 +87,3 @@ overflow-x: hidden;
     } /*solo aplica a pantallas menores de 600*/
 }
     
-* {
-  /* estilo por defecto para todos los elementos de la pagina*/
-  box-sizing: border-box;
-  font-family: Candara;
-color:rgba(107, 104, 104);
-}
-h1{font-size:60px;
-}
-h3{
-  margin-left: 10%;
-}
-.contenedor{
-  display: flex;
-justify-content: center;}
-.piefoto{
-
-position: relative;
- 
-  background-color: rgba(124, 151, 191, 0.5);
-  color: rgba(236, 242, 51);
-font-size:1.2vw;
-font-weight:bold;
-text-align:center;
-height:12vh;
- top:-12vh;
-  
-}
-figure{
- padding: 5px;
-  margin: 5px;
-
-     width: 20%;
-  height:41vh;
-  display: inline-block;
-}
-
-img{   
-
-  width: 100%;
- 
-  padding-top: 5%;
-  object-fit: contain;
-display:inline-block
- 
-}
-
-
-@media only screen and (max-width: 600px) {
-
-
-
-
-}

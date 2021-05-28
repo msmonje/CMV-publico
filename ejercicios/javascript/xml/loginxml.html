@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://carlosboniniklison.github.io/publico/ejercicios/xml/loginXML.html -->
+<html lang="es"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Carlos Boni
+fecha: 12 mayo - parte login
+--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>FORMULARIO LOGIN xhr</title>
+    
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<link rel="stylesheet" href="./loginxml_files/loginXML.css">
+	<script src="./loginxml_files/jquery.min.js.descarga"></script>
+	<script src="./loginxml_files/loginXML.js.descarga"></script>
+	
+
+</head>
+
+
+<body onload="controlar()">
+
+	<header>
+		<h1>INICIO DE SESION</h1>		
+		<h2>usando XMLHttpResponse con XML (AJAX)</h2>
+
+	</header>
+		<form method="GET" id="ingresar" name="miFormulario" action="https://carlosboniniklison.github.io/publico/ejercicios/xml/loginXML.html#" onsubmit="return intentar()">
+			<label for="apellido">Usuario:</label>
+			<input type="text" id="usr" name="formUsuario" required=""><br>
+			<label for="apellido">Clave:</label>
+			<input type="text" id="clv" name="formClave" required=""><br>
+			<input type="submit" value="INGRESAR">
+		</form>
+		<button id="desconectar" onclick="desconectar()" style="display: none;">DESCONECTAR</button>
+		<button onclick="desconectar()">LIMPIAR MEMORIA</button>
+ 
+
+
+
+
+
+</body></html>
