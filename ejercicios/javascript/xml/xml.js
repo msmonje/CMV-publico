@@ -9,41 +9,8 @@ resumen: lectura y carga en array bidimensional de un XML
 // variable global de la pagina
 let registrados = [];// global
 
-function leerXML() {
-  // lee desde GitHub.
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      miFuncion(this,"Desde GitHub");
-    }
-  };
-  xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
-  xhr.send();
-}
 
-function leerXML0() {
-  // lee desde GitHub.
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      miFuncion(this,"Desde GitHub con atributos");
-    }
-  };
-  xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados2.xml", true);
-  xhr.send();
-}
 
-function leerXML1() {
-  // lee desde Axartec.
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      miFuncion(this,"Desde Axartec");
-    }
-  };
-  xhr.open("GET", "https://appslab.axartec.com/pruebas/registrados.xml", true);
-  xhr.send();
-}
 
 function leerXML2() {
   // lee desde aquí.

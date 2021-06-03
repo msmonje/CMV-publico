@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+entorno: curso Accenture-CMV
+autor: Carlos Boni
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>CMS-Accenture - Arrays con JavaScript</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="31mayo-array.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+		}
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>CMS-Accenture - Arrays con JavaScript</h1>
+		<br/>
+		<p id="arrayDesordenado"></p>
+		<button onclick=ordenar(1)> Mayor a Menor</button>
+		<button onclick=ordenar(0)>Menor a Mayor</button>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+
+
+		<p id="mensaje">Aquí ira lo que leemos</p>
+		<button onclick="ordenarUsuarios()"> Ordenar por Usuario</button>
+		<button onclick="ordenarClaves()">Ordenar por Clave</button>
+
+		<input id="nombre" type="text" placeholder="usr...">
+		<button type="button" onclick="filtrarBusqueda()">Mostrar Clave</button>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+
+	</footer>
+
+	<script src="31mayo-array.js"></script>
+</body>
+</html>
