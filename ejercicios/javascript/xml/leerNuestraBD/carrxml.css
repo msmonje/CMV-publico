@@ -3,14 +3,27 @@ body{
     font-family: candara;
     
 }
-.carousel {
+#miCarru{
+    display: flex;
+    width:70vw;
+    margin-left: 0px;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+/* .carousel {
     text-align: center;
 
     width: 22vw; 
     margin-left: auto;
     margin-right: auto;
+   } */
+   img{
+       
    }
    #carouselExampleCaptions{
+       display: flex;
+       justify-content: space-around;
     text-align: center;
    }
    .carousel-caption{

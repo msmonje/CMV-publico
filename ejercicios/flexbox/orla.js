@@ -148,60 +148,55 @@ function mostrarFoto() {
 
 
     tabla += "</table>"
+}
 
     // la mostramos en el html
     //document.getElementById("solicitado").innerHTML = tabla;
-}
-function mostrarImagen() {
-    // muestro en pantalla el array de usuarios registrados
-    // en formato tabla en el id solicitado
-    //let nom = $("#nom").val();
-    let foto = null;
-    let bloque = "<div class=\"carousel-inner\">";
-    let bots = "";
-    foto = registrados[0][1];
-
-    // actualizo la tabla de visualización
-    bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
-    //bloque = "<div class=\"carousel-inner\">";
-    for (i = 1; i < registrados.length; i++) {
-       // if (nom == registrados[i][0]) {
-            foto = registrados[i][1];
-
-            bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
-           // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
-            
-       // }
-   }
-   bloque+="</div>"
-    
-
-    // la mostramos en el html
-    //document.getElementById("botones").innerHTML = bots;
-    document.getElementById("miCarru").innerHTML = bloque;
-}
-
+// }
 // function mostrarImagen() {
 //     // muestro en pantalla el array de usuarios registrados
 //     // en formato tabla en el id solicitado
 //     //let nom = $("#nom").val();
-//     let foto = registrados[0][1];
-//     let bloque = "";
-//     let superbloque = "";
+//     let foto = null;
 //     let bloque = "<div class=\"carousel-inner\">";
-//     for (i = 0; i < registrados.length; i++) {
-//         if (i == 0) {
-//             // actualizo la tabla de visualización
-//             bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
-//             // actualizo el array bidimensional con los usuarios registrados
-//         }
-//         // else if (foto == null) {
-//         //     bloque = "No se encuentra"
-//         // }
-//         else{
-//             foto= registrados[i][1];
-//             bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
-//         }
-//     }
+//     let bots = "";
+//     foto = registrados[0][1];
 
+//     // actualizo la tabla de visualización
+//     bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
+//     //bloque = "<div class=\"carousel-inner\">";
+//     for (i = 1; i < registrados.length; i++) {
+//        // if (nom == registrados[i][0]) {
+//             foto = registrados[i][1];
+
+//             bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
+//             bots += "<button type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
+            
+//        // }
+//    }
+//    bloque+="</div>"
+    
+
+//     // la mostramos en el html
+//     document.getElementById("botones").innerHTML = bots;
+//     document.getElementById("miCarru").innerHTML = bloque;
 // }
+
+function mostrarImagen() {
+    // muestro en pantalla el array de usuarios registrados
+    // en formato tabla en el id solicitado
+    //let nom = $("#nom").val();
+    let foto = registrados[0][1];
+    let bloque = "";
+    
+    for (i = 0; i < registrados.length; i++) {
+       foto= registrados[i][1]
+            // actualizo la tabla de visualización
+            bloque += "<figure class=\"imagen\"> <img src='" + foto + "'/></figure>";
+            // actualizo el array bidimensional con los usuarios registrados
+       
+        
+    }
+    document.getElementById("contenedor").innerHTML = bloque;
+
+}

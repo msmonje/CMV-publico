@@ -47,10 +47,11 @@ function cargarArray(xml) {
         // leo las etiquetas que me interesan del objeto
         let usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
         let usrPsw = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
+        let detalle= x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
         // actualizo la tabla de visualización
-        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
         // actualizo el array bidimensional con los usuarios registrados
-        let elemento = [usrNom, usrPsw];
+        let elemento = [usrNom, usrPsw, detalle];
         registrados.push(elemento);
     }
     tabla += "</table>";
@@ -97,8 +98,9 @@ function mostrar() {
                 // leo las etiquetas que me interesan del objeto
                 usrNom = registrados[i][0];
                 usrPsw = registrados[i][1];
+                detalle = registrados[i][2];
                 // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
                 // actualizo el array bidimensional con los usuarios registrados
             }
             tabla += "</table>"
@@ -107,25 +109,7 @@ function mostrar() {
     // la mostramos en el html
     //document.getElementById("solicitado").innerHTML = tabla;
 }
-// function mostrarFoto() {
-//     // muestro en pantalla el array de usuarios registrados
-//     // en formato tabla en el id solicitado
-//     let nom = $("#nom").val();
-//     let foto = null;
-//     for (i = 0; i < registrados.length; i++) {
-//         if (nom == registrados[i][0]) {
-//             foto = registrados[i][1];
-//             break;
-//         }
 
-
-//     }
-//     if (foto==null){
-//         foto="No se encuentra"
-//     }
-//     document.getElementById("solicitado").innerHTML = foto;
-// }
-// la mostramos en el html
 function mostrarFoto() {
     // muestro en pantalla el array de usuarios registrados
     // en formato tabla en el id solicitado
@@ -138,7 +122,7 @@ function mostrarFoto() {
             foto = registrados[i][1];
 
             // actualizo la tabla de visualización
-            tabla += "<tr><td>" + nom + "</td><td>" + foto + "</td></tr>";
+            tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
             // actualizo el array bidimensional con los usuarios registrados
         }
     }
@@ -160,15 +144,17 @@ function mostrarImagen() {
     let bloque = "<div class=\"carousel-inner\">";
     let bots = "";
     foto = registrados[0][1];
+    let detalle = registrados [0][2]
 
     // actualizo la tabla de visualización
-    bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
+    bloque += "<div class=\"carousel-item active\"> <img src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
     //bloque = "<div class=\"carousel-inner\">";
     for (i = 1; i < registrados.length; i++) {
        // if (nom == registrados[i][0]) {
             foto = registrados[i][1];
+         detalle= registrados [i][2];
 
-            bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
+            bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
            // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
             
        // }
@@ -181,27 +167,3 @@ function mostrarImagen() {
     document.getElementById("miCarru").innerHTML = bloque;
 }
 
-// function mostrarImagen() {
-//     // muestro en pantalla el array de usuarios registrados
-//     // en formato tabla en el id solicitado
-//     //let nom = $("#nom").val();
-//     let foto = registrados[0][1];
-//     let bloque = "";
-//     let superbloque = "";
-//     let bloque = "<div class=\"carousel-inner\">";
-//     for (i = 0; i < registrados.length; i++) {
-//         if (i == 0) {
-//             // actualizo la tabla de visualización
-//             bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
-//             // actualizo el array bidimensional con los usuarios registrados
-//         }
-//         // else if (foto == null) {
-//         //     bloque = "No se encuentra"
-//         // }
-//         else{
-//             foto= registrados[i][1];
-//             bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
-//         }
-//     }
-
-// }

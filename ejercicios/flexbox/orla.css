@@ -1,0 +1,27 @@
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+
+
+    
+}
+figure{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.imagen{
+   width: 33%;
+   height:45vh;
+   object-fit: cover;
+   padding:5px;
+}
+img{
+    height: 100%;
+    width:100%;
+}
+
+@media screen and (max-width: 500px) { 
+    .imagen{
+        height:25%;
+    }
+ }
