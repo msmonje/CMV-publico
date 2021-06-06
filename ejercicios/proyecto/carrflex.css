@@ -1,5 +1,5 @@
 #fon{
-    height:500px;
+    height:530px;
     width: 100%;
     filter: opacity(55%) sepia(50);
     
@@ -11,7 +11,7 @@
     position: absolute;
     text-align: center;
     z-index: 0;
-    height: 10vh;
+    height: 18vh;
     
 } 
 .titulo{
