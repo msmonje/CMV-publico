@@ -1,0 +1,14 @@
+WEBVTT
+
+STYLE
+::cue{
+    color: white;
+}
+00:00:01.000 --> 00:00:04.000
+- Nunca bebas nitrógeno líquido.
+
+00:00:05.000 --> 00:00:09.000
+- Podría perforar tu estómago.
+- Podrías morir.
+
+NOTE Esta es la última línea en el archivo
