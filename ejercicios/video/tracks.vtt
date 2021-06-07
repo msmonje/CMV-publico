@@ -1,5 +1,8 @@
 WEBVTT
-
+STYLE
+::cue{
+    L:50%; Porcentaje de la posición vertical del texto desde arriba
+}
 
 00:00:01.000 --> 00:00:04.000
 - Nunca bebas nitrógeno líquido.
