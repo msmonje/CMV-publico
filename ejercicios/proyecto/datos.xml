@@ -15,210 +15,75 @@
         <detalle>Conoce en persona a los Romanov.</detalle>
     </elemento>
     <elemento>
-        <nombre>parisxii</nombre>
-        <foto>https://www.pandasecurity.com/es/mediacenter/src/uploads/2020/02/pandasecurity-smartcity.jpg</foto>
-        <pie>Paris s. XII</pie>
+        <nombre>paris s. XXII</nombre>
+        <foto>imagenes/parisxii.jpg</foto>
+        <pie>Paris s. XXII</pie>
         <detalle>Descubre el futuro cercano.</detalle>
     </elemento>
     <elemento>
         <nombre>eudora</nombre>
-        <foto>https://cdnb.artstation.com/p/assets/images/images/000/550/085/large/yin-wang-2-11.jpg?1426472178</foto>
+        <foto>imagenes/eudora.jpg</foto>
         <pie>Eudora, s.LVI</pie>
         <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas.</detalle>
     </elemento>
     <elemento>
-        <nombre>bigbang</nombre>
-        <foto>https://www.ecestaticos.com/image/clipping/1200/675/e3cb6fb51224460d1a5de076f16df010/lo-que-sucedio-antes-del-big-bang-revelado-por-stephen-hawking.jpg</foto>
+        <nombre> El Big Bang</nombre>
+        <foto>imagenes/bigbang.jpg</foto>
         <pie>El instante del Big Bang</pie>
         <detalle>Visita el gran comienzo de todo.</detalle>
     </elemento>
     <elemento>
-        <nombre>coloniamarte</nombre>
-        <foto>https://bravosnews.com/images/NOTICIAS/Juguetes_Espias/M2.jpg</foto>
+        <nombre>cColonia marciana</nombre>
+        <foto>imagenes/coloniamarte.jpg</foto>
         <pie>Colonia marciana s.XX</pie>
         <detalle>Visita los inicios de la antigua colonia marciana.</detalle>
     </elemento>
     <elemento>
-        <nombre>bigcrash</nombre>
-        <foto>https://i1.sndcdn.com/artworks-000118075441-3fs8lz-t500x500.jpg</foto>
+        <nombre>El Big Crash</nombre>
+        <foto>imagens/bigcrash.jpg</foto>
         <pie>El gran final.</pie>
         <detalle>Ve con tus propios ojos como acabará todo.</detalle>
     </elemento>
     <elemento>
-        <nombre>saturnociudad</nombre>
-        <foto>https://specials-images.forbesimg.com/imageserve/5fcbceed74abc03453ea698a/960x0.jpg?fit=scale</foto>
-        <pie>Saturno</pie>
+        <nombre>Ciudad de Saturno</nombre>
+        <foto>imagenes/saturno.jpg</foto>
+        <pie>Ciudad de Saturno</pie>
         <detalle>Conoce las ciudades burbuja de Saturno.</detalle>
     </elemento>
     <elemento>
-        <nombre>error</nombre>
-        <foto>https://cdn.pixabay.com/photo/2017/10/17/10/05/stress-2860034_1280.jpg</foto>
+        <nombre>Tu gran error</nombre>
+        <foto>imagenes/errorjpg</foto>
         <pie>Cambia tu pasado.</pie>
         <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
     </elemento>
     <elemento>
-        <nombre>dinosaurios</nombre>
-        <foto>https://m.media-amazon.com/images/I/712tg+1OFFL._AC_.jpg</foto>
-        <pie>¡Pelea con un dinosaurio!</pie>
-        <detalle>Viaja al pasado más remoto.</detalle>
+        <nombre>kennedy</nombre>
+        <foto>imagenes/kennedy.jpg</foto>
+        <pie>El asesinato de JFK.</pie>
+        <detalle>Descubre quién mató a Kennedy.</detalle>
     </elemento>
     <elemento>
-        <nombre>rusiaimperial</nombre>
-        <foto>https://cdni.rbth.com/rbthmedia/images/2017.12/original/5a2a68d885600a6fda55171b.jpg</foto>
-        <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
+        <nombre>samurai</nombre>
+        <foto>imagenes/samurai.jpg</foto>
+        <pie>Samurais de Japón</pie>
+        <detalle>Conoce el Japón clásico.</detalle>
     </elemento>
     <elemento>
-        <nombre>parisxii</nombre>
-        <foto>https://www.pandasecurity.com/es/mediacenter/src/uploads/2020/02/pandasecurity-smartcity.jpg</foto>
-        <pie>Paris s. XII</pie>
-        <detalle>Descubre el futuro cercano.</detalle>
+        <nombre>entierro</nombre>
+        <foto>imagenes/entierro.jpg</foto>
+        <pie>Tu entierro</pie>
+        <detalle>Descubre como acabará tu vida: Quién asistirá a tu funeral. </detalle>
     </elemento>
     <elemento>
-        <nombre>eudora</nombre>
-        <foto>https://cdnb.artstation.com/p/assets/images/images/000/550/085/large/yin-wang-2-11.jpg?1426472178</foto>
-        <pie>Eudora, s.LVI</pie>
-        <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas.</detalle>
+        <nombre>pirata</nombre>
+        <foto>imagenes/pirata.jpg</foto>
+        <pie>Barco pirata</pie>
+        <detalle>Navega en un barco pirata rumbo al Caribe. Codéate con  Barbanegra.</detalle>
     </elemento>
     <elemento>
-        <nombre>bigbang</nombre>
-        <foto>https://www.ecestaticos.com/image/clipping/1200/675/e3cb6fb51224460d1a5de076f16df010/lo-que-sucedio-antes-del-big-bang-revelado-por-stephen-hawking.jpg</foto>
-        <pie>El instante del Big Bang</pie>
-        <detalle>Visita el gran comienzo de todo.</detalle>
+        <nombre>Egipto</nombre>
+        <foto>imagenes/egipto.jpg</foto>
+        <pie>El antiguo Egipto</pie>
+        <detalle>Conoce en persona a Cleopatra. Descubre como se construyeron las pirámides.</detalle>
     </elemento>
-    <elemento>
-        <nombre>coloniamarte</nombre>
-        <foto>https://bravosnews.com/images/NOTICIAS/Juguetes_Espias/M2.jpg</foto>
-        <pie>Colonia marciana s.XX</pie>
-        <detalle>Visita los inicios de la antigua colonia marciana.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>bigcrash</nombre>
-        <foto>https://i1.sndcdn.com/artworks-000118075441-3fs8lz-t500x500.jpg</foto>
-        <pie>El gran final.</pie>
-        <detalle>Ve con tus propios ojos como acabará todo.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>saturnociudad</nombre>
-        <foto>https://specials-images.forbesimg.com/imageserve/5fcbceed74abc03453ea698a/960x0.jpg?fit=scale</foto>
-        <pie>Saturno</pie>
-        <detalle>Conoce las ciudades burbuja de Saturno.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>error</nombre>
-        <foto>https://cdn.pixabay.com/photo/2017/10/17/10/05/stress-2860034_1280.jpg</foto>
-        <pie>Cambia tu pasado.</pie>
-        <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
-    </elemento>
-    <elemento>
-        <nombre>dinosaurios</nombre>
-        <foto>https://m.media-amazon.com/images/I/712tg+1OFFL._AC_.jpg</foto>
-        <pie>¡Pelea con un dinosaurio!</pie>
-        <detalle>Viaja al pasado más remoto.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>rusiaimperial</nombre>
-        <foto>https://cdni.rbth.com/rbthmedia/images/2017.12/original/5a2a68d885600a6fda55171b.jpg</foto>
-        <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>parisxii</nombre>
-        <foto>https://www.pandasecurity.com/es/mediacenter/src/uploads/2020/02/pandasecurity-smartcity.jpg</foto>
-        <pie>Paris s. XII</pie>
-        <detalle>Descubre el futuro cercano.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>eudora</nombre>
-        <foto>https://cdnb.artstation.com/p/assets/images/images/000/550/085/large/yin-wang-2-11.jpg?1426472178</foto>
-        <pie>Eudora, s.LVI</pie>
-        <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>bigbang</nombre>
-        <foto>https://www.ecestaticos.com/image/clipping/1200/675/e3cb6fb51224460d1a5de076f16df010/lo-que-sucedio-antes-del-big-bang-revelado-por-stephen-hawking.jpg</foto>
-        <pie>El instante del Big Bang</pie>
-        <detalle>Visita el gran comienzo de todo.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>coloniamarte</nombre>
-        <foto>https://bravosnews.com/images/NOTICIAS/Juguetes_Espias/M2.jpg</foto>
-        <pie>Colonia marciana s.XX</pie>
-        <detalle>Visita los inicios de la antigua colonia marciana.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>bigcrash</nombre>
-        <foto>https://i1.sndcdn.com/artworks-000118075441-3fs8lz-t500x500.jpg</foto>
-        <pie>El gran final.</pie>
-        <detalle>Ve con tus propios ojos como acabará todo.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>saturnociudad</nombre>
-        <foto>https://specials-images.forbesimg.com/imageserve/5fcbceed74abc03453ea698a/960x0.jpg?fit=scale</foto>
-        <pie>Saturno</pie>
-        <detalle>Conoce las ciudades burbuja de Saturno.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>error</nombre>
-        <foto>https://cdn.pixabay.com/photo/2017/10/17/10/05/stress-2860034_1280.jpg</foto>
-        <pie>Cambia tu pasado.</pie>
-        <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
-    </elemento>
-    <elemento>
-        <nombre>dinosaurios</nombre>
-        <foto>https://m.media-amazon.com/images/I/712tg+1OFFL._AC_.jpg</foto>
-        <pie>¡Pelea con un dinosaurio!</pie>
-        <detalle>Viaja al pasado más remoto.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>rusiaimperial</nombre>
-        <foto>https://cdni.rbth.com/rbthmedia/images/2017.12/original/5a2a68d885600a6fda55171b.jpg</foto>
-        <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>parisxii</nombre>
-        <foto>https://www.pandasecurity.com/es/mediacenter/src/uploads/2020/02/pandasecurity-smartcity.jpg</foto>
-        <pie>Paris s. XII</pie>
-        <detalle>Descubre el futuro cercano.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>eudora</nombre>
-        <foto>https://cdnb.artstation.com/p/assets/images/images/000/550/085/large/yin-wang-2-11.jpg?1426472178</foto>
-        <pie>Eudora, s.LVI</pie>
-        <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>bigbang</nombre>
-        <foto>https://www.ecestaticos.com/image/clipping/1200/675/e3cb6fb51224460d1a5de076f16df010/lo-que-sucedio-antes-del-big-bang-revelado-por-stephen-hawking.jpg</foto>
-        <pie>El instante del Big Bang</pie>
-        <detalle>Visita el gran comienzo de todo.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>coloniamarte</nombre>
-        <foto>https://bravosnews.com/images/NOTICIAS/Juguetes_Espias/M2.jpg</foto>
-        <pie>Colonia marciana s.XX</pie>
-        <detalle>Visita los inicios de la antigua colonia marciana.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>bigcrash</nombre>
-        <foto>https://i1.sndcdn.com/artworks-000118075441-3fs8lz-t500x500.jpg</foto>
-        <pie>El gran final.</pie>
-        <detalle>Ve con tus propios ojos como acabará todo.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>saturnociudad</nombre>
-        <foto>https://specials-images.forbesimg.com/imageserve/5fcbceed74abc03453ea698a/960x0.jpg?fit=scale</foto>
-        <pie>Saturno</pie>
-        <detalle>Conoce las ciudades burbuja de Saturno.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>error</nombre>
-        <foto>https://cdn.pixabay.com/photo/2017/10/17/10/05/stress-2860034_1280.jpg</foto>
-        <pie>Cambia tu pasado.</pie>
-        <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
-    </elemento>
-
-
-</orla>
-   
+   </orla>

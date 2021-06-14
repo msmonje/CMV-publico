@@ -23,7 +23,7 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    xhr.open("GET", "datos.xml", true);
+    xhr.open("GET", "https://msmonje.github.io/CMV-publico/ejercicios/proyecto/datos.xml", true);
     //xhr.open("GET", "registrados2.xml", true);  si uso un archivo local----INICIAR APACHE!!!
     xhr.send();
     
