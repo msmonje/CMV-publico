@@ -52,6 +52,7 @@
               <a class="nav-link" href="#">Pricing</a>
             </li>
           </ul>
+             <div><button valor="noche">Alternar colores</button></div>
           <span class="navbar-text">
            Otherwordly
           </span>
@@ -85,6 +86,15 @@
 
 
   </main>
+  <script>
+		// seccion de codigo javascript 
+		
+			$("button").click(function(){
+				$("body").toggleClass("noche");
+				$("h1").toggleClass("noche");
+			  });
+	
+		</script>
 </body>
 
 </html>

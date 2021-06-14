@@ -23,7 +23,7 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    xhr.open("GET", "datos.xml", true);
+    xhr.open("GET", "https://msmonje.github.io/CMV-publico/ejercicios/javascript/xml/leerNuestraBD/datos.xml", true);
     //xhr.open("GET", "registrados2.xml", true);  si uso un archivo local----INICIAR APACHE!!!
     xhr.send();
     
@@ -68,74 +68,6 @@ function cargarArray(xml) {
 
 }
 
-// function mostrarClave(){
-//     // obtenemos el usuario del campo input y
-//     // validamos que exista en el array
-//     // si no, mostramos un alert y no hacemos nada
-//     // si existe actualizamos el elemento con id clavebuscada
-
-//     // sintaxis jQuery: nombre = $("#nom").val();
-
-//         let nombre = $("#nom").val();
-
-//         let clave= registrados.indexOf(nombre) ; //.getElementsByTagName("clave")[0].childNodes[0].nodeValue;
-
-
-//         //document.getElementById("claveBuscada").innerHTML = ;
-
-// }
-
-
-
-function mostrar() {
-    // muestro en pantalla el array de usuarios registrados
-    // en formato tabla en el id solicitado
-    let tabla = "";
-    registrados.forEach((elemento) => {
-        // usuario.forEach((datos) => {
-            tabla = "<table><tr><th>NOMBRE</th><th>URL</th></tr>";
-            for (i = 0; i < registrados.length; i++) {
-                // leo las etiquetas que me interesan del objeto
-                usrNom = registrados[i][0];
-                usrPsw = registrados[i][1];
-                detalle = registrados[i][2];
-                // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
-                // actualizo el array bidimensional con los usuarios registrados
-            }
-            tabla += "</table>"
-        // });
-    });
-    // la mostramos en el html
-    //document.getElementById("solicitado").innerHTML = tabla;
-}
-
-function mostrarFoto() {
-    // muestro en pantalla el array de usuarios registrados
-    // en formato tabla en el id solicitado
-    let nom = $("#nom").val();
-    let foto = null;
-    let tabla = "";
-    tabla = "<table><tr><th>NOMBRE</th><th>URL</th></tr>";
-    for (i = 0; i < registrados.length; i++) {
-        if (nom == registrados[i][0]) {
-            foto = registrados[i][1];
-
-            // actualizo la tabla de visualización
-            tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
-            // actualizo el array bidimensional con los usuarios registrados
-        }
-    }
-    if (foto == null) {
-        tabla = "No se encuentra"
-    }
-
-
-    tabla += "</table>"
-
-    // la mostramos en el html
-    //document.getElementById("solicitado").innerHTML = tabla;
-}
 function mostrarImagen() {
     // muestro en pantalla el array de usuarios registrados
     // en formato tabla en el id solicitado

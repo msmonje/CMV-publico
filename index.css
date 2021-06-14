@@ -1,4 +1,4 @@
-/*
+/* /*
 CSS 
 web o pagina:
 autor:
@@ -10,14 +10,13 @@ o sea al final de este archivo o en la misma pagina html
 Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 
 */
-
+/* 
 :root {
   --azulclaro: #e6f2ff;
 }
 
 * {
-	 /* estilos por defecto para TODOS los elementos de la página; */
-	/* estilo:valor; */
+	 
 	font-family: 'Nunito', sans-serif;
 	color: #17191c;
 	
@@ -62,16 +61,49 @@ h2{
   color:#fffff;
   font-size:18px;
   font-weight:bold;
+} */
+
+
+
+* {
+  margin: 0px;
+
 }
-
-
-
-
 body {
-	background: var(--azulclaro); /* Azul al 10% */
-}
+  background-image: url("./assets/fondo.jpg");
+  }
+  .titulo{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(67, 67, 153,0.7);
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  }
+
+  .lista{
+    text-align: center;
+    width: 40%;
+    font-size:20px;
+   
+  }
+  .lista a:hover{
+    text-decoration: none;
+  }
+  .lista li{
+    background-color: white;
+  }
+  .lista li:hover{
+    background-color: rgb(228, 223, 220);
+    color: white;
+  }
+
+  
+  
 
 
-
-
-
+  

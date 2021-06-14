@@ -4,13 +4,13 @@
 <orla>
     <elemento>
         <nombre>dinosaurios</nombre>
-        <foto>imagenes/dinosaurios.jpg</foto>
+        <foto>https://m.media-amazon.com/images/I/712tg+1OFFL._AC_.jpg</foto>
         <pie>¡Pelea con un dinosaurio!</pie>
         <detalle>Viaja al pasado más remoto.</detalle>
     </elemento>
     <elemento>
-        <nombre>Rusia imperial</nombre>
-        <foto>imagenes/rusiaimperial.jpg</foto>
+        <nombre>rusiaimperial</nombre>
+        <foto>https://cdni.rbth.com/rbthmedia/images/2017.12/original/5a2a68d885600a6fda55171b.jpg</foto>
         <pie>Rusia imperial</pie>
         <detalle>Conoce en persona a los Romanov.</detalle>
     </elemento>

@@ -1,6 +1,20 @@
-body{
+:root {
+    --fuenteDia: #252222;
+    --fuenteNoche: #f3f3fa;
+    --fondoDia: rgba(245, 245, 248, 0.2);
+    --fondoNoche: black;
+  }
+  .dia {
+    color: var(--fuenteDia);
+    background-color: var(--fondoDia);
+  }
+  .noche {
+    color: var(--fuenteNoche);
+    background-color: var(--fondoNoche);
+  }
+  /* body{
     background-color: rgb(19, 18, 18);
-}
+} */
 #nav{
     position: absolute;
     top:10px;

@@ -12,24 +12,24 @@
 // variable global de la pagina
 // un array con un elemento por cada usuario del XML
 // en realidad será un array de arrays, una matriz bidimensional
-let registrados = [];
+let registrados2 = [];
 
 
-function leerXML() {
+function leerXML2() {
     // lee desde GitHub.
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            cargarArray(this);
+            cargarArray2(this);
         }
     };
-    xhr.open("GET", "datos.xml", true);
+    xhr.open("GET", "https://msmonje.github.io/CMV-publico/ejercicios/javascript/xml/leerNuestraBD/datos.xml", true);
     //xhr.open("GET", "registrados2.xml", true);  si uso un archivo local----INICIAR APACHE!!!
     xhr.send();
     
 }
 
-function cargarArray(xml) {
+function cargarArray2(xml) {
     var i;
     var usrNom;
     var usrPsw;
@@ -47,15 +47,14 @@ function cargarArray(xml) {
         // leo las etiquetas que me interesan del objeto
         let usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
         let usrPsw = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
-        let detalle= x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
         // actualizo la tabla de visualización
-        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
         // actualizo el array bidimensional con los usuarios registrados
-        let elemento = [usrNom, usrPsw, detalle];
-        registrados.push(elemento);
+        let elemento = [usrNom, usrPsw];
+        registrados2.push(elemento);
     }
     tabla += "</table>";
-    mostrarImagen();
+    mostrarImagen2();
     //document.getElementById("mensaje").innerHTML = tabla;
 
     // muestro en consola el array de usuarios registrados
@@ -91,25 +90,42 @@ function mostrar() {
     // muestro en pantalla el array de usuarios registrados
     // en formato tabla en el id solicitado
     let tabla = "";
-    registrados.forEach((elemento) => {
-        // usuario.forEach((datos) => {
+    registrados2.forEach((elemento) => {
+        usuario.forEach((datos) => {
             tabla = "<table><tr><th>NOMBRE</th><th>URL</th></tr>";
-            for (i = 0; i < registrados.length; i++) {
+            for (i = 0; i < registrados2.length; i++) {
                 // leo las etiquetas que me interesan del objeto
-                usrNom = registrados[i][0];
-                usrPsw = registrados[i][1];
-                detalle = registrados[i][2];
+                usrNom = registrados2[i][0];
+                usrPsw = registrados2[i][1];
                 // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
                 // actualizo el array bidimensional con los usuarios registrados
             }
             tabla += "</table>"
-        // });
+        });
     });
     // la mostramos en el html
     //document.getElementById("solicitado").innerHTML = tabla;
 }
+// function mostrarFoto() {
+//     // muestro en pantalla el array de usuarios registrados
+//     // en formato tabla en el id solicitado
+//     let nom = $("#nom").val();
+//     let foto = null;
+//     for (i = 0; i < registrados.length; i++) {
+//         if (nom == registrados[i][0]) {
+//             foto = registrados[i][1];
+//             break;
+//         }
 
+
+//     }
+//     if (foto==null){
+//         foto="No se encuentra"
+//     }
+//     document.getElementById("solicitado").innerHTML = foto;
+// }
+// la mostramos en el html
 function mostrarFoto() {
     // muestro en pantalla el array de usuarios registrados
     // en formato tabla en el id solicitado
@@ -117,12 +133,12 @@ function mostrarFoto() {
     let foto = null;
     let tabla = "";
     tabla = "<table><tr><th>NOMBRE</th><th>URL</th></tr>";
-    for (i = 0; i < registrados.length; i++) {
-        if (nom == registrados[i][0]) {
-            foto = registrados[i][1];
+    for (i = 0; i < registrados2.length; i++) {
+        if (nom == registrados2[i][0]) {
+            foto = registrados2[i][1];
 
             // actualizo la tabla de visualización
-            tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+            tabla += "<tr><td>" + nom + "</td><td>" + foto + "</td></tr>";
             // actualizo el array bidimensional con los usuarios registrados
         }
     }
@@ -132,38 +148,55 @@ function mostrarFoto() {
 
 
     tabla += "</table>"
+}
 
     // la mostramos en el html
     //document.getElementById("solicitado").innerHTML = tabla;
-}
-function mostrarImagen() {
+// }
+// function mostrarImagen() {
+//     // muestro en pantalla el array de usuarios registrados
+//     // en formato tabla en el id solicitado
+//     //let nom = $("#nom").val();
+//     let foto = null;
+//     let bloque = "<div class=\"carousel-inner\">";
+//     let bots = "";
+//     foto = registrados[0][1];
+
+//     // actualizo la tabla de visualización
+//     bloque += "<div class=\"carousel-item active\"> <img src='" + foto + "'/></div>";
+//     //bloque = "<div class=\"carousel-inner\">";
+//     for (i = 1; i < registrados.length; i++) {
+//        // if (nom == registrados[i][0]) {
+//             foto = registrados[i][1];
+
+//             bloque += "<div class=\"carousel-item \"> <img src='" + foto + "'/></div>";
+//             bots += "<button type=\"button\" data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
+            
+//        // }
+//    }
+//    bloque+="</div>"
+    
+
+//     // la mostramos en el html
+//     document.getElementById("botones").innerHTML = bots;
+//     document.getElementById("miCarru").innerHTML = bloque;
+// }
+
+function mostrarImagen2() {
     // muestro en pantalla el array de usuarios registrados
     // en formato tabla en el id solicitado
     //let nom = $("#nom").val();
-    let foto = null;
-    let bloque = "<div class=\"carousel-inner\">";
-    let bots = "";
-    foto = registrados[0][1];
-    let detalle = registrados [0][2]
-
-    // actualizo la tabla de visualización
-    bloque += "<div class=\"carousel-item active\"> <img class=\"carru\"  src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
-    //bloque = "<div class=\"carousel-inner\">";
-    for (i = 1; i < registrados.length; i++) {
-       // if (nom == registrados[i][0]) {
-            foto = registrados[i][1];
-         detalle= registrados [i][2];
-
-            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
-           // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
-            
-       // }
-   }
-   bloque+="</div>"
+    let foto = registrados2[0][1];
+    let bloque = "";
     
+    for (i = 0; i < registrados2.length; i++) {
+       foto= registrados2[i][1]
+            // actualizo la tabla de visualización
+            bloque += "<figure class=\"fig2\"> <img class=\"img2\" src='" + foto + "'/></figure>";
+            // actualizo el array bidimensional con los usuarios registrados
+       
+        
+    }
+    document.getElementById("contenedor2").innerHTML = bloque;
 
-    // la mostramos en el html
-    //document.getElementById("botones").innerHTML = bots;
-    document.getElementById("miCarru").innerHTML = bloque;
 }
-
