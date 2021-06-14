@@ -47,11 +47,11 @@ function cargarArray(xml) {
         // leo las etiquetas que me interesan del objeto
         let usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
         let usrPsw = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
-        let detalle= x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
+        let pie= x[i].getElementsByTagName("pie")[0].childNodes[0].nodeValue;
         // actualizo la tabla de visualización
-        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + pie +"</td></tr>";
         // actualizo el array bidimensional con los usuarios registrados
-        let elemento = [usrNom, usrPsw, detalle];
+        let elemento = [usrNom, usrPsw, pie];
         registrados.push(elemento);
     }
     tabla += "</table>";
@@ -98,9 +98,9 @@ function mostrar() {
                 // leo las etiquetas que me interesan del objeto
                 usrNom = registrados[i][0];
                 usrPsw = registrados[i][1];
-                detalle = registrados[i][2];
+                pie = registrados[i][2];
                 // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + pie +"</td></tr>";
                 // actualizo el array bidimensional con los usuarios registrados
             }
             tabla += "</table>"
@@ -122,7 +122,7 @@ function mostrarFoto() {
             foto = registrados[i][1];
 
             // actualizo la tabla de visualización
-            tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + detalle +"</td></tr>";
+            tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + pie +"</td></tr>";
             // actualizo el array bidimensional con los usuarios registrados
         }
     }
@@ -144,17 +144,17 @@ function mostrarImagen() {
     let bloque = "<div class=\"carousel-inner\">";
     let bots = "";
     foto = registrados[0][1];
-    let detalle = registrados [0][2]
+    let pie = registrados [0][2]
 
     // actualizo la tabla de visualización
-    bloque += "<div class=\"carousel-item active\"> <img class=\"carru\"  src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
+    bloque += "<div class=\"carousel-item active\"> <img class=\"carru\"  src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + pie + "</p></div></div>";
     //bloque = "<div class=\"carousel-inner\">";
     for (i = 1; i < registrados.length; i++) {
        // if (nom == registrados[i][0]) {
             foto = registrados[i][1];
-         detalle= registrados [i][2];
+         pie= registrados [i][2];
 
-            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + detalle + "</p></div></div>";
+            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + pie + "</p></div></div>";
            // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
             
        // }

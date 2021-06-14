@@ -40,7 +40,7 @@
     </elemento>
     <elemento>
         <nombre>El Big Crash</nombre>
-        <foto>imagens/bigcrash.jpg</foto>
+        <foto>imagenes/bigcrash.jpg</foto>
         <pie>El gran final.</pie>
         <detalle>Ve con tus propios ojos como acabará todo.</detalle>
     </elemento>
@@ -52,7 +52,7 @@
     </elemento>
     <elemento>
         <nombre>Tu gran error</nombre>
-        <foto>imagenes/errorjpg</foto>
+        <foto>imagenes/error.jpg</foto>
         <pie>Cambia tu pasado.</pie>
         <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
     </elemento>
