@@ -25,13 +25,57 @@
 
 <body onload="leerXML()">
  <main>
-   <h2 style="text-align: center;">Ejercicio Xml y Flexbox</h1>
-    <br>
-   <h2></h2>
+  <nav id= "nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Otherwordly</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="carrflex.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="orla.html">Galería </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://msmonje.github.io/CMV-publico">Ejercicios</a>
+        </li>
+      </ul>
+      
+    
+
+      <span >
+        <button id ="cambio" type="button" class="btn btn-dark" onclick="cambiarModo()">Claro</button>
+      </span>
+    </div>
+  </nav>
 <div id="contenedor">
    
 </div>
   </main>
+  <script type="text/javascript"> 
+    function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("dia"); 
+      let botonCambio=$("#cambio").text();
+      if(botonCambio=='Claro'){
+        $("#cambio").text('Oscuro')
+      $("#nav").removeClass("navbar-dark bg-dark");
+      $("#nav").addClass("navbar-light bg-light");
+      }
+      else{
+        $("#cambio").text('Claro');
+      $("#nav").removeClass("navbar-light bg-light");
+      $("#nav").addClass("navbar-dark bg-dark");
+      }
+    } 
+    // $("button").click(function(){
+		// 		$("body").toggleClass("noche");
+		// 		$("h1").toggleClass("noche");
+		// 	  });
+  </script>
 </body>
 
 </html>

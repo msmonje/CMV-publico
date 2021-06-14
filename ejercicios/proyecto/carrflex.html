@@ -21,6 +21,7 @@
   <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
   <script src="carrflex.js"></script>
   <link href="carrflex.css" rel="stylesheet">
+ 
   <title>Otherwordly</title>
 </head>
 
@@ -35,7 +36,7 @@
 
       </div> -->
       <nav id= "nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <a class="navbar-brand"  href="#">  Otherwordly</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,21 +44,26 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="orla.html">Galería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="https://msmonje.github.io/CMV-publico">Ejercicios</a>
             </li>
           </ul>
-             <div><button valor="noche">Alternar colores</button></div>
-          <span class="navbar-text">
-           Otherwordly
+          
+        
+
+          <span >
+            <button  id= "cambio"  type="button" class="btn btn-dark" onclick="cambiarModo()">Claro</button>
           </span>
         </div>
       </nav>
+      <div id="texto">
+        <h1>Tu agencia de viajes temporales</h1>
+      </div>
 
       <div id="contenedor">
 
@@ -86,15 +92,27 @@
 
 
   </main>
-  <script>
-		// seccion de codigo javascript 
-		
-			$("button").click(function(){
-				$("body").toggleClass("noche");
-				$("h1").toggleClass("noche");
-			  });
-	
-		</script>
+  <script type="text/javascript"> 
+    function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("dia"); 
+      let botonCambio=$("#cambio").text();
+      if(botonCambio=='Claro'){
+        $("#cambio").text('Oscuro')
+      $("#nav").removeClass("navbar-dark bg-dark");
+      $("#nav").addClass("navbar-light bg-light");
+      }
+      else{
+        $("#cambio").text('Claro');
+      $("#nav").removeClass("navbar-light bg-light");
+      $("#nav").addClass("navbar-dark bg-dark");
+      }
+    } 
+    // $("button").click(function(){
+		// 		$("body").toggleClass("noche");
+		// 		$("h1").toggleClass("noche");
+		// 	  });
+  </script>
 </body>
 
 </html>

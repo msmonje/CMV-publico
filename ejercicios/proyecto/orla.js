@@ -23,7 +23,7 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    xhr.open("GET", "https://msmonje.github.io/CMV-publico/ejercicios/javascript/xml/leerNuestraBD/datos.xml", true);
+    xhr.open("GET", "https://msmonje.github.io/CMV-publico/ejercicios/proyecto/datos.xml", true);
     //xhr.open("GET", "registrados2.xml", true);  si uso un archivo local----INICIAR APACHE!!!
     xhr.send();
     
@@ -33,6 +33,8 @@ function cargarArray(xml) {
     var i;
     var usrNom;
     var usrPsw;
+    var pie;
+    var detalle;
     var elemento = [];
     var xmlDoc = xml.responseXML;
 
@@ -47,10 +49,12 @@ function cargarArray(xml) {
         // leo las etiquetas que me interesan del objeto
         let usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
         let usrPsw = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
+        let pie= x[i].getElementsByTagName("pie")[0].childNodes[0].nodeValue;
+        let detalle= x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
         // actualizo la tabla de visualización
-        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + pie + "</td></tr>" +detalle+ "</td></tr>" ;
         // actualizo el array bidimensional con los usuarios registrados
-        let elemento = [usrNom, usrPsw];
+        let elemento = [usrNom, usrPsw,pie,detalle];
         registrados.push(elemento);
     }
     tabla += "</table>";
@@ -97,8 +101,10 @@ function mostrar() {
                 // leo las etiquetas que me interesan del objeto
                 usrNom = registrados[i][0];
                 usrPsw = registrados[i][1];
+                pie = registrados[i][2];
+                detalle = registrados[i][3];
                 // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>" + pie+"</td></tr>" +detalle +"</td></tr>" ;
                 // actualizo el array bidimensional con los usuarios registrados
             }
             tabla += "</table>"
@@ -187,12 +193,15 @@ function mostrarImagen() {
     // en formato tabla en el id solicitado
     //let nom = $("#nom").val();
     let foto = registrados[0][1];
+    let pie=registrados[0][2];
+    let detalle= registrados[0][3];
     let bloque = "";
     
     for (i = 0; i < registrados.length; i++) {
-       foto= registrados[i][1]
+       foto= registrados[i][1];
+       pie=registrados[i][2];
             // actualizo la tabla de visualización
-            bloque += "<figure class=\"imagen\"> <img src='" + foto + "'/></figure>";
+            bloque += "<figure class=\"imagen\"> <img src='" + foto + "'/><div id='pie' class='pie'><p>" + pie + "</p></div></figure></div>";
             // actualizo el array bidimensional con los usuarios registrados
        
         
