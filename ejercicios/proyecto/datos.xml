@@ -2,24 +2,7 @@
 <!-- Creamos el xml para el proyecto final -->
 <!-- nombre de la bd -->
 <orla>
-    <elemento>
-        <nombre>dinosaurios</nombre>
-        <foto>imagenes/dinosaurios.jpg</foto>
-        <pie>¡Pelea con un dinosaurio!</pie>
-        <detalle>Viaja al pasado más remoto.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>Rusia imperial</nombre>
-        <foto>imagenes/rusiaimperial.jpg</foto>
-        <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
-    </elemento>
-    <elemento>
-        <nombre>paris s. XXII</nombre>
-        <foto>imagenes/parisxii.jpg</foto>
-        <pie>Paris s. XXII</pie>
-        <detalle>Descubre el futuro cercano.</detalle>
-    </elemento>
+
     <elemento>
         <nombre>eudora</nombre>
         <foto>imagenes/eudora.jpg</foto>
@@ -41,7 +24,7 @@
     <elemento>
         <nombre>El Big Crash</nombre>
         <foto>imagenes/bigcrash.jpg</foto>
-        <pie>El gran final.</pie>
+        <pie>El gran final</pie>
         <detalle>Ve con tus propios ojos como acabará todo.</detalle>
     </elemento>
     <elemento>
@@ -53,13 +36,13 @@
     <elemento>
         <nombre>Tu gran error</nombre>
         <foto>imagenes/error.jpg</foto>
-        <pie>Cambia tu pasado.PRUEB</pie>
+        <pie>Cambia tu pasado</pie>
         <detalle>¿Has cometido un  terrible error? ¡No te preocupes! Altera tu vida a tu antojo. (* Otherwordly no se responsabiliza de los cambios realizados en la Historia).</detalle>
     </elemento>
     <elemento>
         <nombre>kennedy</nombre>
         <foto>imagenes/kennedy.jpg</foto>
-        <pie>El asesinato de JFK.</pie>
+        <pie>El asesinato de JFK</pie>
         <detalle>Descubre quién mató a Kennedy.</detalle>
     </elemento>
     <elemento>
@@ -85,5 +68,23 @@
         <foto>imagenes/egipto.jpg</foto>
         <pie>El antiguo Egipto</pie>
         <detalle>Conoce en persona a Cleopatra. Descubre como se construyeron las pirámides.</detalle>
+    </elemento>
+        <elemento>
+        <nombre>dinosaurios</nombre>
+        <foto>imagenes/dinosaurios.jpg</foto>
+        <pie>¡Pelea con un dinosaurio!</pie>
+        <detalle>Viaja al pasado más remoto.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Rusia imperial</nombre>
+        <foto>imagenes/rusiaimperial.jpg</foto>
+        <pie>Rusia imperial</pie>
+        <detalle>Conoce en persona a los Romanov.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>paris s. XXII</nombre>
+        <foto>imagenes/parisxii.jpg</foto>
+        <pie>Paris s. XXII</pie>
+        <detalle>Descubre el futuro cercano.</detalle>
     </elemento>
    </orla>

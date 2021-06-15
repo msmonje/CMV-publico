@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 :root {
     --fuenteDia: #252222;
     --fuenteNoche: #f3f3fa;
@@ -72,14 +76,29 @@ background-color: rgba(39, 39, 39,0.9) ;
 .navbar-light .navbar-nav .active .nav-link  {
  color: red;
 }
-#texto{
+#texto1{
+    font-family: 'Rock Salt', cursive;
+    font-weight: bolder;
     position: absolute;
     border-width: 2px;
     border: white;
-    top: 180px;
+    top: 9rem;
         z-index: 3;
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 70%;
+}
+#texto{font-family: 'Rock Salt', cursive;
+    position: absolute;
+    border-width: 2px;
+    border: white;
+    top: 12rem;
+        z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     width: 70%;
 }
