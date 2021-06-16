@@ -1,9 +1,9 @@
 
   
     var c = document.getElementById("canvas");
-    var ctx = c.getContext('2d');
-    ctx.font = "30px Arial";
-    ctx.strokeText("Esto es un canvas",10,50);
+    var ct = c.getContext('2d');
+    ct.font = "30px Arial";
+    ct.strokeText("Esto es un canvas",10,50);
     function draw() {
         var canvas = document.getElementById('canvas2');
         if (canvas.getContext) {
