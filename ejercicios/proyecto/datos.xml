@@ -69,18 +69,19 @@
         <pie>El antiguo Egipto</pie>
         <detalle>Conoce en persona a Cleopatra. Descubre como se construyeron las pirámides.</detalle>
     </elemento>
+     <elemento>
+        <nombre>Rusia imperial</nombre>
+        <foto>imagenes/rusiaimperial.jpg</foto>
+        <pie>Rusia imperial</pie>
+        <detalle>Conoce en persona a los Romanov.</detalle>
+    </elemento>
         <elemento>
         <nombre>dinosaurios</nombre>
         <foto>imagenes/dinosaurios2.jpg</foto>
         <pie>¡Pelea con un dinosaurio!</pie>
         <detalle>Viaja al pasado más remoto.</detalle>
     </elemento>
-    <elemento>
-        <nombre>Rusia imperial</nombre>
-        <foto>imagenes/rusiaimperial.jpg</foto>
-        <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
-    </elemento>
+   
     <elemento>
         <nombre>paris s. XXII</nombre>
         <foto>imagenes/parisxii.jpg</foto>
