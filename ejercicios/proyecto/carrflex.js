@@ -147,14 +147,14 @@ function mostrarImagen() {
     let pie = registrados [0][2]
 
     // actualizo la tabla de visualización
-    bloque += "<div class=\"carousel-item active\"> <img class=\"carru\"  src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + pie + "</p></div></div>";
+    bloque += "<div class=\"carousel-item active\"> <img class=\"carru\"  src='" + foto +"'/><div id='pie' class='carousel-caption d-none d-md-block'><p id=\"detalle\">" + pie + "</p></div></div>";
     //bloque = "<div class=\"carousel-inner\">";
     for (i = 1; i < registrados.length; i++) {
        // if (nom == registrados[i][0]) {
             foto = registrados[i][1];
          pie= registrados [i][2];
 
-            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p>" + pie + "</p></div></div>";
+            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p id=\"detalle\">" + pie + "</p></div></div>";
            // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
             
        // }

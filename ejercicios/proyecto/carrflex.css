@@ -57,6 +57,9 @@
     height:20%;
     margin: 0%;
 }    
+#detalle{
+    font-family: 'Rock Salt', cursive;
+}
 
 .bg-dark{
 background-color: rgba(39, 39, 39,0.9) ;
