@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <!-- una hoja de estilos personalizada, SIEMPRE DE ULTIMO, DESPUES DEL BOOTSTRAP-->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+  
+  <link rel="stylesheet"
+    href="./features/bootstrap-5.0.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+  <script src="./features/bootstrap-5.0.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
   <!-- <link href="carrxml.css" rel="stylesheet" /> -->
 
@@ -21,7 +25,7 @@
   <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
   <script src="carrflex.js"></script>
   <link href="carrflex.css" rel="stylesheet">
- 
+
   <title>Otherwordly</title>
 
 </head>
@@ -31,13 +35,13 @@
     <div id="fondo">
       <img id="fon" src="imagenes\fondo.jpg">
 
-<!-- 
+      <!-- 
       <div class="titulo"> Ejercicio Carrusel con Xml y Flexbox
         <br><br>
 
       </div> -->
-      <nav id= "nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand"  href="#" style="font-family: 'Rock Salt', cursive;">  Otherwordly</a>
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;"> Otherwordly</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -54,11 +58,12 @@
               <a class="nav-link" href="https://msmonje.github.io/CMV-publico">Catálogo</a>
             </li>
           </ul>
-          
-        
+
+
 
           <span style="justify-items: left;">
-            <button style="margin-left: 10px;" id ="cambio" type="button" class="btn btn-dark" onclick="cambiarModo()">Claro</button>
+            <button style="margin-left: 10px;" id="cambio" type="button" class="btn btn-dark"
+              onclick="cambiarModo()">Claro</button>
           </span>
         </div>
       </nav>
@@ -66,7 +71,7 @@
         <h1>OTHERWORDLY</h1>
         <br>
       </div>
-        <div id="texto">
+      <div id="texto">
         <h1>Tu agencia de viajes temporales</h1>
       </div>
 
@@ -97,22 +102,22 @@
 
 
   </main>
-  <script type="text/javascript"> 
-    function cambiarModo() { 
-      var cuerpoweb = document.body; 
-      cuerpoweb.classList.toggle("dia"); 
-      let botonCambio=$("#cambio").text();
-      if(botonCambio=='Claro'){
+  <script type="text/javascript">
+    function cambiarModo() {
+      var cuerpoweb = document.body;
+      cuerpoweb.classList.toggle("dia");
+      let botonCambio = $("#cambio").text();
+      if (botonCambio == 'Claro') {
         $("#cambio").text('Oscuro')
-      $("#nav").removeClass("navbar-dark bg-dark");
-      $("#nav").addClass("navbar-light bg-light");
+        $("#nav").removeClass("navbar-dark bg-dark");
+        $("#nav").addClass("navbar-light bg-light");
       }
-      else{
+      else {
         $("#cambio").text('Claro');
-      $("#nav").removeClass("navbar-light bg-light");
-      $("#nav").addClass("navbar-dark bg-dark");
+        $("#nav").removeClass("navbar-light bg-light");
+        $("#nav").addClass("navbar-dark bg-dark");
       }
-    } 
+    }
     // $("button").click(function(){
 		// 		$("body").toggleClass("noche");
 		// 		$("h1").toggleClass("noche");
