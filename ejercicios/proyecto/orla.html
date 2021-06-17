@@ -27,52 +27,118 @@
 
 <body onload="leerXML()">
  <main>
-  <nav id= "nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;">Otherwordly</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="carrflex.html">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="orla.html" >¡Ofertas! </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://msmonje.github.io/CMV-publico">Catálogo</a>
-        </li>
-      </ul>
-      
-    
-
-      <span style="justify-items: left;">
-        <button style="margin-left: 10px;" id ="cambio" type="button" class="btn btn-dark" onclick="cambiarModo()">Claro</button>
-      </span>
-    </div>
-  </nav>
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;"> Otherwordly</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+             
+            
+              <li class="nav-item">
+                <a class="nav-link" href="carrflex.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">¡Ofertas!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://msmonje.github.io/CMV-publico">Catálogo</a>
+              </li>
+            </ul>
+            <span style="justify-items: left;">
+              <button style="margin-left: 10px;" id="cambio" type="button" class="btn btn-dark"
+                onclick="cambiarModo()">Claro</button>
+            </span>
+          </div>
+        </div>
+      </nav>
 <div id="contenedor">
    
 </div>
   </main>
-  <script type="text/javascript"> 
-    function cambiarModo() { 
-      var cuerpoweb = document.body; 
-      cuerpoweb.classList.toggle("dia"); 
-      let botonCambio=$("#cambio").text();
-      if(botonCambio=='Claro'){
+   <script type="text/javascript">
+   function cambiarModo() {
+      var cuerpoweb = document.body;
+      var modocolor = localStorage.getItem("modo");
+      cuerpoweb.classList.toggle("dia");
+      let botonCambio = $("#cambio").text();
+      if (botonCambio == 'Claro') {
         $("#cambio").text('Oscuro')
-      $("#nav").removeClass("navbar-dark bg-dark");
-      $("#nav").addClass("navbar-light bg-light");
+        $("#nav").removeClass("navbar-dark bg-dark");
+        $("#nav").addClass("navbar-light bg-light");
+        localStorage.setItem("modo", "claro");
       }
-      else{
+      else {
         $("#cambio").text('Claro');
-      $("#nav").removeClass("navbar-light bg-light");
-      $("#nav").addClass("navbar-dark bg-dark");
+        $("#nav").removeClass("navbar-light bg-light");
+        $("#nav").addClass("navbar-dark bg-dark");
+        localStorage.setItem("modo", "oscuro");
       }
-    } 
+    }
+    function cargarModo() {    
+ 
+ if (modocolor === "oscuro") {               
+  $("#cambio").text('Claro');
+        $("#nav").removeClass("navbar-light bg-light");
+        $("#nav").addClass("navbar-dark bg-dark")
+ } else {
+  $("#cambio").text('Oscuro')
+        $("#nav").removeClass("navbar-dark bg-dark");
+        $("#nav").addClass("navbar-light bg-light");
+ }
+
+}
+    function lanzadera(){
+   leerXML(); 
+   cargarModo();
+   
+  }
+///// INTENTO DE LOCALSTORAGE MODO NOCHE/DIA
+  // var modocolor = localStorage.getItem("modo");
+  //   let botonCambio = $("#cambio").text();
+  //   var cuerpoweb = document.body;
+
+    
+  //   function cargarModo() {
+
+  //     if (modocolor === "oscuro") {
+  //       $("#cambio").text('Claro');
+  //       $("#nav").removeClass("navbar-light bg-light");
+  //       $("#nav").addClass("navbar-dark bg-dark")
+       
+  //     } else {
+  //       $("#cambio").text('Oscuro')
+  //       $("#nav").removeClass("navbar-dark bg-dark");
+  //       $("#nav").addClass("navbar-light bg-light");
+  //       localStorage.setItem("modo", "claro");
+        
+  //     }
+  //     function lanzadera() {
+  //     leerXML();
+  //     cargarModo();
+
+  //   }
+  //     function cambiarModo() {
+       
+
+  //       if (botonCambio == 'Claro') {
+  //         $("#cambio").text('Oscuro')
+  //         $("#nav").removeClass("navbar-dark bg-dark");
+  //         $("#nav").addClass("navbar-light bg-light");
+  //         localStorage.setItem("modo", "claro");
+  //         cuerpoweb.classList.toggle("noche");
+  //       }
+  //       else {
+  //         $("#cambio").text('Claro');
+  //         $("#nav").removeClass("navbar-light bg-light");
+  //         $("#nav").addClass("navbar-dark bg-dark");
+  //         localStorage.setItem("modo", "oscuro");
+  //         cuerpoweb.classList.toggle("dia");
+  //       }
+  //     }
+
     // $("button").click(function(){
 		// 		$("body").toggleClass("noche");
 		// 		$("h1").toggleClass("noche");

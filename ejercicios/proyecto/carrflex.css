@@ -76,9 +76,7 @@ background-color: rgba(39, 39, 39,0.9) ;
 .navbar-brand{
     margin-left:10px;
 }
-.navbar-light .navbar-nav .active .nav-link  {
- color: red;
-}
+
 #texto1{
     font-family: 'Rock Salt', cursive;
     font-weight: bolder;
@@ -115,7 +113,7 @@ background-color: rgba(39, 39, 39,0.9) ;
     width: 70%;
 }
 
-.navbar-dark .navbar-nav .active .nav-link  {
+.nav-item .active  {
     color: red !important;
    } 
 .carru{

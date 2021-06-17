@@ -20,12 +20,9 @@
   .navbar-brand{
     margin-left:10px;
 }
-.navbar-light .navbar-nav .active .nav-link  {
- color: red;
-}
-.navbar-dark .navbar-nav .active .nav-link  {
-    color: red !important;
-   } 
+.nav-item .active  {
+  color: red !important;
+ } 
   body{
     color: var(--fuenteNoche); 
     background-color: var(--fondoNoche);
@@ -49,9 +46,7 @@
     justify-content: right;
    
 }
-#detalle{
-  font-family: 'Rock Salt', cursive;
-}
+
 .pie{
    
 	height:2.5rem;
@@ -62,6 +57,13 @@
 	font: size 1.5rem;;
 	font-weight:bold;
 	text-align:center;
+  font-family: 'Rock Salt', cursive;
+}
+.flip2{
+  width: 33%;
+  height:45vh;
+  object-fit: cover;
+  padding:5px;
 }
 figure{
     margin-top: 0%;
@@ -72,12 +74,17 @@ figure{
    height:45vh;
    object-fit: cover;
    padding:5px;
+   opacity: 0.5;
+   -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  transition:all .5s ease-in-out;
 
 }
 .os{
   opacity: 0.4;
   -webkit-transition: opacity 0.3s;
  transition: opacity 0.3s;
+ transition:all .5s ease-in-out;
 }
 .imagen:hover{  opacity: 1;}
 img{
