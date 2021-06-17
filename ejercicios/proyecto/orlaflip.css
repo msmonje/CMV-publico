@@ -34,6 +34,7 @@
     position: absolute;
     top:10%;
     justify-content: center;
+    width: 100%;
     
 }
 #nav{
@@ -46,7 +47,59 @@
     justify-content: right;
    
 }
+.flip-box{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: transparent;
+    perspective: 1000px;
+    width: 33%;
+    height:45vh;
+    object-fit: cover;
+    padding:5px;
+    /* opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+   transition: opacity 0.3s;
+   transition:all .5s ease-in-out; */
+  
+   
+}
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;}
 
+.flip-box-front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-color: transparent;
+        color: black;
+        /* z-index: 10; */
+    }
+
+.flip-box-back{
+        position: relative;
+        padding-top: 20%;
+        padding-left: 20%;
+        padding-right: 20%;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-color:beige;
+        color: black;
+        transform: rotateY(180deg);
+        /* z-index: 1; */
+    }
+ 
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
 .pie{
    
 	height:2.5rem;
@@ -58,8 +111,9 @@
 	font-weight:bold;
 	text-align:center;
   font-family: 'Rock Salt', cursive;
+  backface-visibility: hidden;
 }
-.flip2{
+/* .flip2{
   position: relative;
   top:-75%;
   width: 100%;
@@ -70,14 +124,14 @@
  padding:20px;
  z-index: 0;
  backface-visibility: hidden;
-}
-figure{
+} */
+/* figure{
     margin-top: 0%;
     margin-bottom: 0%;
     transition: transform .8s;
     transform-style: preserve-3d;
-}
-.imagen{
+} */
+/* .imagen{
    width: 33%;
    height:45vh;
    object-fit: cover;
@@ -89,14 +143,9 @@ figure{
   z-index: 10;
   backface-visibility: hidden;
 
-}
-.os{
-  opacity: 0.4;
-  -webkit-transition: opacity 0.3s;
- transition: opacity 0.3s;
- transition:all .5s ease-in-out;
-}
-.imagen:hover{  opacity: 1;}
+} */
+
+.flip-box:hover{  opacity: 1;}
 img{
     height: 100%;
     width:100%;

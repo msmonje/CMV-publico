@@ -202,7 +202,7 @@ function mostrarImagen() {
        pie=registrados[i][2];
        detalle= registrados[i][3];
             // actualizo la tabla de visualización
-            bloque += "<figure class=\"imagen\"> <img src='" + foto + "'/><div id='pie' class='pie'><p >" + pie + "</p></div><div class=\"flip2\">"+detalle+"</div></figure></div>";
+            bloque += "<div class=\"flip-box\"><div class=\"flip-box-inner\"><div class=\"flip-box-front\"> <img src='" + foto + "'/><div id='pie' class='pie'><p >" + pie + "</p></div></div><div class=\"flip-box-back\">"+detalle+"</div></div></div>";
             // bloque += "<figure class=\"imagen\"> <img src='" + foto + "'/><div id='pie' class='pie'><p >" + pie + "</p></div></figure></div>";
             // actualizo el array bidimensional con los usuarios registrados
        
