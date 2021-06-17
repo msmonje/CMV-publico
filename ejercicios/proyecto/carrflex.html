@@ -8,11 +8,14 @@
 
   <!-- Bootstrap CSS -->
 
-  
+
   <link rel="stylesheet"
-    href="https://msmonje.github.io/CMV-publico/ejercicios/proyecto/features/bootstrap-5.0.1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    href="https://msmonje.github.io/CMV-publico/ejercicios/proyecto/features/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous"> -->
-  <script src="https://msmonje.github.io/CMV-publico/ejercicios/proyecto/features/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script
+    src="https://msmonje.github.io/CMV-publico/ejercicios/proyecto/features/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 
   <!-- <link href="carrxml.css" rel="stylesheet" /> -->
 
@@ -42,7 +45,8 @@
       <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;"> Otherwordly</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,7 +54,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-            
+
               <li class="nav-item">
                 <a class="nav-link" href="orla.html">¡Ofertas!</a>
               </li>
@@ -62,16 +66,17 @@
               <button style="margin-left: 10px;" id="cambio" type="button" class="btn btn-dark"
                 onclick="cambiarModo()">Claro</button>
             </span>
+
           </div>
         </div>
       </nav>
-     
+
       <div id="texto1">
         <h1>OTHERWORDLY</h1>
         <br>
       </div>
       <div id="texto">
-        <h1>Tu agencia de viajes temporales</h1>
+        <h1>Tu agencia (ficticia) de viajes temporales</h1>
       </div>
 
       <div id="contenedor">
@@ -93,11 +98,16 @@
         </div>
       </div>
     </div>
-
-
-
-
   </main>
+
+  <!-- pie de pagina -->
+  <footer>
+    <br /><br /><br />
+    <div id="foot ">&copy; 2021 <a href="https://https://msmonje.github.io/CMV-publico3625" target="_blank">Mariana
+        Sueiro</a></div>
+
+  </footer>
+
   <script type="text/javascript">
     function cambiarModo() {
       var cuerpoweb = document.body;
@@ -114,6 +124,26 @@
         $("#nav").addClass("navbar-dark bg-dark");
       }
     }
+
+    const switchButton = document.getElementById('switch');
+
+    switchButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark'); //convierte el HTML con la clase "dark"
+      switchButton.classList.toggle('active'); //convierte el botón del html que aplica el modo oscuro con la clase "active"
+      $("#cambio").text('Oscuro')
+      $("#nav").removeClass("navbar-dark bg-dark");
+      $("#nav").addClass("navbar-light bg-light");
+    });
+
+    const switchButton2 = document.getElementById('switch2');
+
+    switchButton2.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      switchButton2.classList.toggle('active');
+      $("#cambio").text('Claro');
+      $("#nav").removeClass("navbar-light bg-light");
+      $("#nav").addClass("navbar-dark bg-dark");
+    });
     // $("button").click(function(){
 		// 		$("body").toggleClass("noche");
 		// 		$("h1").toggleClass("noche");
