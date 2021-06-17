@@ -125,25 +125,7 @@
       }
     }
 
-    const switchButton = document.getElementById('switch');
-
-    switchButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark'); //convierte el HTML con la clase "dark"
-      switchButton.classList.toggle('active'); //convierte el botón del html que aplica el modo oscuro con la clase "active"
-      $("#cambio").text('Oscuro')
-      $("#nav").removeClass("navbar-dark bg-dark");
-      $("#nav").addClass("navbar-light bg-light");
-    });
-
-    const switchButton2 = document.getElementById('switch2');
-
-    switchButton2.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      switchButton2.classList.toggle('active');
-      $("#cambio").text('Claro');
-      $("#nav").removeClass("navbar-light bg-light");
-      $("#nav").addClass("navbar-dark bg-dark");
-    });
+ 
     // $("button").click(function(){
 		// 		$("body").toggleClass("noche");
 		// 		$("h1").toggleClass("noche");
