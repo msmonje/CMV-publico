@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
 
-}#contenedor{
+}
+#contenedor{
     position: absolute;
     top:50px;
 display: flex;
