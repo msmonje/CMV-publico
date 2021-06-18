@@ -7,31 +7,31 @@
         <nombre>eudora</nombre>
         <foto>imagenes/eudora.jpg</foto>
         <pie>Eudora, s.LVI</pie>
-        <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas.</detalle>
+        <detalle>Visita la capital de la flamante Unión de Constelaciones Posterráqueas. Promoción especial familia numerosa. </detalle>
     </elemento>
     <elemento>
         <nombre> El Big Bang</nombre>
         <foto>imagenes/bigbang.jpg</foto>
         <pie>El instante del Big Bang</pie>
-        <detalle>Visita el gran comienzo de todo.</detalle>
+        <detalle>SUPEROFERTA: Visita el gran comienzo de todo, el pasado más remoto, el inicio. ¡Sólo 34000 euros!</detalle>
     </elemento>
     <elemento>
         <nombre>cColonia marciana</nombre>
         <foto>imagenes/coloniamarte.jpg</foto>
         <pie>Colonia marciana s.XX</pie>
-        <detalle>Visita los inicios de la antigua colonia marciana.</detalle>
+        <detalle>Visita los inicios de la antigua colonia marciana. Oferta especial Fin de Milenio. (* Bombonas de oxígeno no incluidas). </detalle>
     </elemento>
     <elemento>
         <nombre>El Big Crash</nombre>
         <foto>imagenes/bigcrash.jpg</foto>
         <pie>El gran final</pie>
-        <detalle>Ve con tus propios ojos como acabará todo.</detalle>
+        <detalle>Ve con tus propios ojos como acabará todo. Siente como eres absorvido por la Gran Singularidad.</detalle>
     </elemento>
     <elemento>
         <nombre>Ciudad de Saturno</nombre>
         <foto>imagenes/saturno.jpg</foto>
         <pie>Ciudad de Saturno</pie>
-        <detalle>Conoce las ciudades burbuja de Saturno.</detalle>
+        <detalle>Conoce las ciudades burbuja de Saturno, antes de su destrucción por los invasores euclidianos. </detalle>
     </elemento>
     <elemento>
         <nombre>Tu gran error</nombre>
@@ -43,49 +43,49 @@
         <nombre>kennedy</nombre>
         <foto>imagenes/kennedy.jpg</foto>
         <pie>El asesinato de JFK</pie>
-        <detalle>Descubre quién mató a Kennedy.</detalle>
+        <detalle>Descubre quién mató a Kennedy. Un clásico familiar a tu alcance hoy.</detalle>
     </elemento>
     <elemento>
         <nombre>samurai</nombre>
         <foto>imagenes/samurai.jpg</foto>
         <pie>Samurais de Japón</pie>
-        <detalle>Conoce el Japón clásico.</detalle>
+        <detalle>Conoce el Japón clásico.Incluye atuendo y armamento de época.</detalle>
     </elemento>
     <elemento>
         <nombre>entierro</nombre>
         <foto>imagenes/entierro.jpg</foto>
-        <pie>Tu entierro</pie>
-        <detalle>Descubre como acabará tu vida: Quién asistirá a tu funeral. </detalle>
+        <pie>Tu entierro ¡OFERTÓN!</pie>
+        <detalle>Descubre como acabará tu vida: Quién asistirá a tu funeral (y quién no). Cuantos nietos tendrás. En que asilo vivirás tus últimos años...¡Y muchas cosas más! </detalle>
     </elemento>
     <elemento>
         <nombre>pirata</nombre>
         <foto>imagenes/pirata.jpg</foto>
         <pie>Barco pirata</pie>
-        <detalle>Navega en un barco pirata rumbo al Caribe. Codéate con  Barbanegra.</detalle>
+        <detalle>Navega en un barco pirata rumbo al Caribe. Codéate con  Barbanegra. Jo-jo-jo y una botella de ron...</detalle>
     </elemento>
     <elemento>
         <nombre>Egipto</nombre>
         <foto>imagenes/egipto.jpg</foto>
         <pie>El antiguo Egipto</pie>
-        <detalle>Conoce en persona a Cleopatra. Descubre como se construyeron las pirámides.</detalle>
+        <detalle>Conoce en persona a Cleopatra. Descubre como se construyeron las pirámides. Aprende jeroglíficos y más.</detalle>
     </elemento>
      <elemento>
         <nombre>Rusia imperial</nombre>
         <foto>imagenes/rusiaimperial.jpg</foto>
         <pie>Rusia imperial</pie>
-        <detalle>Conoce en persona a los Romanov.</detalle>
+        <detalle>Conoce en persona a los Romanov. Intrigas, desamores, vestidos de ensueño...¡Toda una experiencia!</detalle>
     </elemento>
         <elemento>
         <nombre>dinosaurios</nombre>
         <foto>imagenes/dinosaurios2.jpg</foto>
         <pie>¡Pelea con un dinosaurio!</pie>
-        <detalle>Viaja al pasado más remoto.</detalle>
+        <detalle>Viaja al pasado más remoto. Se perseguido (y quizás devorado) por un velocirraptor. (Se recomienda contratar un seguro de viajes). </detalle>
     </elemento>
    
     <elemento>
         <nombre>paris s. XXII</nombre>
         <foto>imagenes/parisxii.jpg</foto>
         <pie>Paris s. XXII</pie>
-        <detalle>Descubre el futuro cercano.</detalle>
+        <detalle>Descubre el futuro cercano. ¡Quizá te cruces con tus bisnietos en una callejuela del centro de la ciudad!</detalle>
     </elemento>
    </orla>

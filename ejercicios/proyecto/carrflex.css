@@ -53,7 +53,7 @@
 }
 #carouselExampleC{
   
-    width: 50%;
+    width: 35vw;
     height:20%;
     margin: 0%;
 }    
@@ -111,6 +111,7 @@ background-color: rgba(39, 39, 39,0.9) ;
     justify-content: center;
     flex-wrap: wrap;
     width: 70%;
+    margin: 0px;
 }
 
 .nav-item .active  {
@@ -139,3 +140,27 @@ background-color: rgba(39, 39, 39,0.9) ;
 #pie{
     color: black;
 }
+#foot{
+    position: relative;
+    top:5rem;
+    
+}
+@media screen and (max-width: 600px) { 
+    #contenedor{
+      display: flex;
+      flex-wrap: wrap;
+        justify-content: center;
+    }
+    #carouselExampleC{
+  
+      display: none;
+    } 
+    #texto{
+        position: absolute;
+        top:20rem;
+    } 
+    #texto1{
+        position: absolute;
+        top:15rem;
+    } 
+   }
