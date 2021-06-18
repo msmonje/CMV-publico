@@ -83,12 +83,14 @@ body {
     flex-wrap: wrap;
   
     justify-content: center;
+    
   }
 
   .lista{
     text-align: center;
     width: 40%;
     font-size:20px;
+    width:25rem;
    
   }
   .lista a:hover{
