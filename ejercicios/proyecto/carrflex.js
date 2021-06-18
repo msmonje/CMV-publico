@@ -154,7 +154,7 @@ function mostrarImagen() {
             foto = registrados[i][1];
          pie= registrados [i][2];
 
-            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p id=\"detalle\">" + pie + "</p></div></div>";
+            bloque += "<div class=\"carousel-item \"> <img class=\"carru\" src='" + foto + "' alt='" + pie + "'/><div id='pie' class='carousel-caption d-none d-md-block'><p id=\"detalle\">" + pie + "</p></div></div>";
            // bots += "<button type=\"button\" data-bs-target=\"#carouselExampleC\" data-bs-slide-to=\"" + i +"\"aria-label=\"Slide 2\"></button>";
             
        // }
